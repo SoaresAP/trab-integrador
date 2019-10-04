@@ -1,4 +1,4 @@
-# PLANEJAMENTO BACK-END
+# PLANEJAMENTO
 
 ## Requisitos funcionais a se desenvolver:
 

@@ -2,12 +2,13 @@
 
 ## Requisitos funcionais a se desenvolver:
 
-1. Pesquisar produtos(RF19)
+1. Cadastro usuário(RF01)
 
-2. Cadastro usuário(RF01)
+2. Efetuar login(RF02)
 
-3. Efetuar login(RF02)
+3. Sair do sistema(RF03)
 
-4. Sair do sistema(RF03)
+4. Pesquisar produtos(RF18)
 
-5. Cadastrar produto(RF08)
+5. Consultar produto(RF19)
+

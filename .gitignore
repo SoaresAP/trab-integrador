@@ -1,3 +1,7 @@
 #LibreOffice locks
 
 *.~lock*
+
+# Swap files
+
+*.swp

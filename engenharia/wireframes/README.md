@@ -23,3 +23,6 @@
 
 13. Tela de login
 14. Tela de cadastro de usuário
+
+## Paleta de cores
+

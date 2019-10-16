@@ -1,6 +1,7 @@
 #LibreOffice locks
 
-*.~lock*
+*.~lock\*
+*.odp\#
 
 # Swap files
 

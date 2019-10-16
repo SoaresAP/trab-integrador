@@ -17,3 +17,10 @@
 12. Tela de cadastro de novo produto (ADMIN)
 13. Tela de alteração de produto (ADMIN)
 14. Tela de gerenciamento de usuários (ADMIN)
+
+## Paleta
+
+FF6361
+BC5090
+58508D
+003F5C

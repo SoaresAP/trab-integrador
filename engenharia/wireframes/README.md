@@ -20,12 +20,12 @@
 
 ## Paleta
 
-FF6361 (salmão)
+\#FF6361 (salmão)
 
-FFADAD (salmão apagado) 4D4D4D (cor de texto para salmão apagado)
+\#FFADAD (salmão apagado) \#4D4D4D (cor de texto para salmão apagado)
 
-BC5090 (rosa-lilás)
+\#BC5090 (rosa-lilás)
 
-58508D (azul-roxo)
+\#58508D (azul-roxo)
 
-003F5C (azul forte)
+\#003F5C (azul forte)

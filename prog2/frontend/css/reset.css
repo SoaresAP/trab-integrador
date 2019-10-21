@@ -1,0 +1,147 @@
+/*
+Adaptado de:
+    https://necolas.github.io/normalize.css/latest/normalize.css
+    https://github.com/filipelinhares/ress/blob/master/ress.css
+*/
+
+
+/*
+=================================================
+||                      Geral                  ||
+=================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+/*
+=================================================
+||                   Conteiners                ||
+=================================================
+*/
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+/*
+=================================================
+||                      Links                  ||
+=================================================
+*/
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+a:active, a:hover {
+    outline-width: 0;
+}
+
+/*
+=================================================
+||                      Listas                 ||
+=================================================
+*/
+
+li {
+    list-style: none;
+}
+
+/*
+=================================================
+||                   Formulários               ||
+=================================================
+*/
+
+input {
+    border-radius: 0;
+}
+
+[disabled] {
+    cursor: default;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+textarea {
+    overflow: auto;
+}
+
+button, input, optgroup, select, textarea {
+    font: inherit;
+}
+
+button, select {
+    text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button, input, select, textarea {
+    background-color: transparent;
+    border-style: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-value {
+  color: currentColor;
+}
+
+legend {
+    border: 0;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+    max-width: 100%;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+/*
+=================================================
+||                      Outros                 ||
+=================================================
+*/
+
+hr {
+  overflow: visible;
+  height: 0;
+}
+
+*[hidden], [hidden] {
+    display: none;
+}
+
+img {
+  border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
+}

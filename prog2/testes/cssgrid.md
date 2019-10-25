@@ -65,3 +65,9 @@ para que os filhos sejam elementos 'grid'
                              'nome2 . . .';
 
 }
+
+### GRID AUTO
+
+- 'grid-auto-rows:<tamanho>|auto|min-content|max-content' = tamanho unico para as linhas
+- 'grid-auto-columns' = mesma coisa para as colunas
+- 'grid-auto-flow:column|row'

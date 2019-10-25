@@ -1,8 +1,8 @@
 header {
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 30% auto;
     grid-template-columns: 20% auto 30%;
-    grid-template-areas: "categorias logo cadastro"
-                         "categorias logo login"
+    grid-template-areas: "categorias logo perfil"
+                         "categorias logo sair"
                          "pesquisa pesquisa pesquisa";
 
     background: green;
@@ -13,7 +13,7 @@ header {
     header {
         grid-template-rows: 60% auto;
         grid-template-columns: 25% 45% auto auto;
-        grid-template-areas: "logo pesquisa cadastro login"
+        grid-template-areas: "logo pesquisa perfil sair"
                              "barra barra barra barra";
 
         background: green;

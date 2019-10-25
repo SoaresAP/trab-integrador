@@ -1,0 +1,98 @@
+/*
+    CSS das telas:
+    1
+ */
+
+* {
+    text-align: center;
+}
+
+
+.grid-conteiner {
+    display: grid;
+}
+
+
+#tela {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid yellow;
+    overflow: auto;
+
+    grid-template-rows: 30% auto;
+    grid-row-gap: 3%;
+
+    background: moccasin;
+}
+
+
+#logo {
+    grid-area: logo;
+}
+
+#cadastro {
+    grid-area: cadastro;
+}
+
+#login {
+    grid-area: login;
+}
+
+#pesquisa {
+    grid-area: pesquisa;
+}
+
+#categorias {
+    display: initial;
+    grid-area: categorias;
+}
+
+#barra-categorias {
+    display: none;
+    grid-area: barra;
+}
+
+header > div {
+    border: 1px solid black;
+    background: lightblue;
+}
+
+
+main {
+    grid-auto-rows: auto;
+    grid-gap: 3%;
+
+    background: lightgreen;
+}
+
+/* -------------------------------- */
+
+@media (min-width: 1000px) {
+
+    #tela {
+        width: 100vw;
+        height: 100vh;
+        border: 1px solid yellow;
+        overflow: auto;
+
+        grid-template-rows: 20% auto;
+        grid-row-gap: 3%;
+
+        background: moccasin;
+    }
+
+    #categorias {
+        display: none;
+    }
+
+    #barra-categorias {
+        display: initial;
+    }
+
+    main {
+        grid-template-columns: auto auto auto auto;
+
+        background: lightgreen;
+    }
+
+}

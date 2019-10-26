@@ -1,12 +1,7 @@
 /*
     Faz o swap entre categorias e usuarios-produtos.
     Inclui pesquisa.
-    Inclui div da tabela e botão de adicionar produtos.
 */
-
-/* #tela {
-    grid-template-rows: 35% auto;
-} */
 
 
 #pesquisa {
@@ -30,10 +25,6 @@ main {
 
 
 @media (min-width: 1000px) {
-
-    /* #tela {
-        grid-template-rows: 25% auto;
-    } */
 
     header {
         grid-template-rows: auto auto auto;

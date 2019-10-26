@@ -1,0 +1,22 @@
+main {
+    grid-template-columns: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1vmin 0;
+    border: 1px solid;
+}
+
+@media (min-width: 1000px) {
+
+    main {
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+
+}

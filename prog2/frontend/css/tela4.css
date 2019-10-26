@@ -1,0 +1,31 @@
+.grid-conteiner{
+  display: grid;
+  border: 1px solid black;
+  margin-top: 50%;
+}
+
+
+.login{
+  text-align: center;
+  border: 1px solid black;
+}
+.usuario, .senha{
+  border: 1px solid black;
+  margin: 2%;
+  padding: 2%;
+  display: inline-block;
+}
+img{
+  width: 4%;
+  align:center;
+}
+
+@media (min-width: 300px) {
+
+  .grid-conteiner{
+    display: grid;
+    border: 1px solid black;
+    margin-top: 10%;
+  }
+
+}

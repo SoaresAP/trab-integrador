@@ -1,11 +1,16 @@
 /*
     Cabecalho com logo, usuarios, produtos, perfil e sair.
-    Não inclui o swap entre categorias e usuarios-produtos;
+    Swap entre opcoes e usuarios-produtos.
 */
 
 
 #usuarios, #produtos {
     display: none;
+}
+
+#opcoes {
+    grid-area: opcoes;
+    display: initial;
 }
 
 #usuarios {
@@ -16,10 +21,6 @@
     grid-area: produtos;
 }
 
-#opcoes {
-    grid-area: opcoes;
-    display: initial;
-}
 
 #logo {
     grid-area: logo;

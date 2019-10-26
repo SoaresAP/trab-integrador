@@ -103,6 +103,11 @@ button::-moz-focus-inner,
 button, input, select, textarea {
     background-color: transparent;
     border-style: none;
+    outline: none;
+}
+
+textarea {
+    resize: none;
 }
 
 select {

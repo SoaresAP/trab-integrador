@@ -39,6 +39,11 @@
     grid-area: barra;
 }
 
+header {
+    grid-template-rows: auto 30% auto;
+    grid-template-columns: 20% auto 30%;
+}
+
 
 main {
     grid-auto-rows: auto;
@@ -57,6 +62,11 @@ main {
 
     #barra-categorias {
         display: initial;
+    }
+
+    header {
+        grid-template-rows: 60% auto;
+        grid-template-columns: 25% 45% auto auto;
     }
 
     main {

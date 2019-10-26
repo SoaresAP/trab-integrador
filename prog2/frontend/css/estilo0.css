@@ -15,13 +15,12 @@
 #tela {
     width: 100vw;
     height: 100vh;
-    border: 1px solid yellow;
     overflow: auto;
 
     grid-template-rows: 30% auto;
     grid-row-gap: 3%;
 
-    background: moccasin;
+    background: orchid;
 }
 
 header > div, main > div {

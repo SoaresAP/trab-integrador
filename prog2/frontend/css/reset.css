@@ -69,6 +69,7 @@ li {
 
 input {
     border-radius: 0;
+    color: inherit;
 }
 
 [disabled] {

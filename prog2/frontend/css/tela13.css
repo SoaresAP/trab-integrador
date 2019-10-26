@@ -1,0 +1,11 @@
+#envio {
+    grid-template-columns: auto auto;
+}
+
+#i-excluir {
+    grid-column: 1 / 2;
+}
+
+#i-alterar {
+    grid-column: 2 / 3;
+}

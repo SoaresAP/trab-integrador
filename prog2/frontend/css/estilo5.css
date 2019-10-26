@@ -1,30 +1,119 @@
 /*
-    Parte do formulário para as telas 12 e 13.
+    Parte da <main> para as telas 12 e 13.
+    Exceto a parte de "envio", que não é comum.
 */
-
-main {
-    background-color: red;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
-}
-
-form {
-    background: gray;
-
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-
-    grid
-}
 
 #titulo {
     grid-area: titulo;
 }
 
+input[type="text"], label {
+    margin: 2% 0;
+}
+
+input[type="text"], input[type="submit"], textarea {
+    border: 1px solid darkblue;
+}
+
+input[type="text"], textarea {
+    text-align: justify;
+}
+
+label {
+    text-align: right;
+    margin-right: 3%;
+}
+
+#i-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    grid-area: img;
+}
+
+#l-codigo { grid-area: l-codigo; }
+#i-codigo { grid-area: i-codigo; }
+
+#l-nome { grid-area: l-nome; }
+#i-nome { grid-area: i-nome; }
+
+#l-valor { grid-area: l-valor; }
+#i-valor { grid-area: i-valor; }
+
+#l-tipo { grid-area: l-tipo; }
+#i-tipo { grid-area: i-tipo; }
+
+#l-categoria { grid-area: l-categoria; }
+#i-categoria { grid-area: i-categoria; }
+
+#l-fabricacao { grid-area: l-fabricacao; }
+#i-fabricacao { grid-area: i-fabricacao; }
+
+#l-validade { grid-area: l-validade; }
+#i-validade { grid-area: i-validade; }
+
+#l-descricao { grid-area: l-descricao; }
+#i-descricao { grid-area: i-descricao; }
+
 #formulario {
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto;
+
+    grid-template-areas: "img img"
+                         "l-codigo i-codigo"
+                         "l-nome i-nome"
+                         "l-valor i-valor"
+                         "l-tipo i-tipo"
+                         "l-categoria i-categoria"
+                         "l-fabricacao i-fabricacao"
+                         "l-validade i-validade"
+                         "l-descricao i-descricao";
+
     grid-area: formulario;
+
+    padding: 1vmin;
 }
 
 #envio {
     grid-area: envio;
+}
+
+
+
+main {
+    grid-template-rows: 10% auto 10%;
+    grid-template-columns: 100%;
+
+    grid-template-areas: "titulo"
+                         "formulario"
+                         "envio";
+}
+
+#form {
+    display: none;
+}
+
+
+@media (min-width: 1000px) {
+
+    #i-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #formulario {
+        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 15% auto 15% auto;
+
+        grid-template-areas: "l-codigo i-codigo . img"
+                             "l-nome i-nome . img"
+                             "l-valor i-valor . img"
+                             "l-tipo i-tipo l-categoria i-categoria"
+                             "l-fabricacao i-fabricacao l-validade i-validade"
+                             "l-descricao i-descricao i-descricao i-descricao"
+                             "l-descricao i-descricao i-descricao i-descricao";
+
+        grid-area: formulario;
+    }
+
 }

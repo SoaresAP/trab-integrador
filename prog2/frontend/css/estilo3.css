@@ -29,6 +29,7 @@ header {
 
 main {
     grid-template-rows: auto 10%;
+    grid-template-columns: 100%;
     grid-gap: 5%;
 }
 

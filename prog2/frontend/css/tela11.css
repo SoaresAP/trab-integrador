@@ -1,17 +1,14 @@
-
 table {
-    border: 1px solid;
+    border-collapse: collapse;
 }
 
 th, td {
-    border: 0.5vmin solid;
-    border-collapse: collapse;
-    padding: 1vh 0.5vw;
+    padding: 1vmin 1vmin;
+    border-bottom: 1px solid;
 }
 
 #tabela-mobile {
     display: initial;
-
 }
 
 #tabela-desktop {
@@ -20,7 +17,6 @@ th, td {
 
 
 @media (min-width: 1000px) {
-
     #tabela-mobile {
         display: none;
     }
@@ -28,11 +24,4 @@ th, td {
     #tabela-desktop {
         display: initial;
     }
-
-    th, td {
-        border: 1px solid;
-        border-collapse: collapse;
-        padding: 1vh 3vw;
-    }
-
 }

@@ -1,0 +1,17 @@
+header {
+    grid-template-rows: auto auto;
+    grid-template-columns: 20% auto 30%;
+    grid-template-areas: "opcoes logo perfil"
+                         "opcoes logo sair";
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "logo usuarios perfil sair"
+                             "logo produtos perfil sair";
+    }
+
+}

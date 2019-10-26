@@ -1,0 +1,85 @@
+/*
+    CSS das telas:
+    9
+*/
+
+
+* {
+    text-align: center;
+}
+
+
+.grid-conteiner {
+    display: grid;
+}
+
+
+#tela {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+
+    grid-template-rows: 30% auto;
+    grid-row-gap: 3%;
+
+    background: moccasin;
+}
+
+
+#usuarios, #produtos {
+    display: none;
+}
+
+#usuarios {
+    grid-area: usuarios;
+}
+
+#usuarios {
+    grid-area: produtos;
+}
+
+#opcoes {
+    grid-area: opcoes;
+    display: initial;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#perfil {
+    grid-area: perfil;
+}
+
+#sair {
+    grid-area: sair;
+}
+
+header > div {
+    border: 1px solid;
+    background: purple;
+}
+
+
+@media (min-width: 1000px) {
+
+    #tela {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+
+        grid-template-rows: 20% auto;
+        grid-row-gap: 3%;
+
+        background: moccasin;
+    }
+
+    #usuarios, #produtos {
+        display: initial;
+    }
+
+    #opcoes {
+        display: none;
+    }
+
+}

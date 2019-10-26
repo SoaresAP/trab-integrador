@@ -8,7 +8,7 @@
 05. Tela de cadastro de usuário
 
 06. Tela principal com login (USUÁRIO)
-07. Tela de resultados da pesquisa com login (USUÁRIO) 
+07. Tela de resultados da pesquisa com login (USUÁRIO)
 08. Tela de visualização de produto específico com login (USUÁRIO)
 
 09. Tela principal com login (ADMIN)

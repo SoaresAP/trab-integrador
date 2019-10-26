@@ -1,0 +1,56 @@
+/*
+    Faz o swap entre categorias e usuarios-produtos.
+    Inclui pesquisa.
+    Inclui div da tabela e botão de adicionar produtos.
+*/
+
+#tela {
+    grid-template-rows: 35% auto;
+}
+
+
+#pesquisa {
+    grid-area: pesquisa;
+}
+
+#categorias {
+    grid-area: categorias;
+    display: none;
+}
+
+header {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 20% auto 30%;
+    grid-template-areas: "opcoes logo perfil"
+                         "opcoes logo sair"
+                         "pesquisa pesquisa pesquisa";
+}
+
+
+main {
+    grid-template-rows: auto 10%;
+    grid-gap: 5%;
+}
+
+
+@media (min-width: 1000px) {
+
+    #tela {
+        grid-template-rows: 25% auto;
+    }
+
+
+    #categorias {
+        display: initial;
+    }
+
+    header {
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+        grid-template-areas: "logo usuarios perfil sair"
+                             "logo produtos perfil sair"
+                             "pesquisa pesquisa pesquisa pesquisa"
+                             "categorias categorias categorias categorias";
+    }
+
+}

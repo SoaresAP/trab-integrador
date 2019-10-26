@@ -1,0 +1,38 @@
+
+table {
+    border: 1px solid;
+}
+
+th, td {
+    border: 0.5vmin solid;
+    border-collapse: collapse;
+    padding: 1vh 0.5vw;
+}
+
+#tabela-mobile {
+    display: initial;
+
+}
+
+#tabela-desktop {
+    display: none;
+}
+
+
+@media (min-width: 1000px) {
+
+    #tabela-mobile {
+        display: none;
+    }
+
+    #tabela-desktop {
+        display: initial;
+    }
+
+    th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 1vh 3vw;
+    }
+
+}

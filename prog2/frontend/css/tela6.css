@@ -4,8 +4,6 @@ header {
     grid-template-areas: "categorias logo perfil"
                          "categorias logo sair"
                          "pesquisa pesquisa pesquisa";
-
-    background: green;
 }
 
 @media (min-width: 1000px) {
@@ -15,8 +13,6 @@ header {
         grid-template-columns: 25% 45% auto auto;
         grid-template-areas: "logo pesquisa perfil sair"
                              "barra barra barra barra";
-
-        background: green;
     }
 
 }

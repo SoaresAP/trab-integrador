@@ -11,7 +11,7 @@ header {
 @media (min-width: 1000px) {
 
     header {
-        grid-template-rows: 60% auto;
+        grid-template-rows: 20% auto;
         grid-template-columns: 25% 45% auto auto;
         grid-template-areas: "logo pesquisa cadastro login"
                              "barra barra barra barra";

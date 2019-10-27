@@ -1,0 +1,14 @@
+header {
+    grid-template-areas: "categorias logo perfil"
+                         "categorias logo sair"
+                         "pesquisa pesquisa pesquisa";
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        grid-template-areas: "logo pesquisa perfil sair"
+                             "barra barra barra barra";
+    }
+
+}

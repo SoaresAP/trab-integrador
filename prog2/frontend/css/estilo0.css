@@ -11,13 +11,12 @@
     display: grid;
 }
 
-
 #tela {
     width: 100vw;
     height: 100vh;
     overflow: auto;
-
     grid-template-rows: 30% auto;
+
     grid-row-gap: 3%;
 
     background: orchid;

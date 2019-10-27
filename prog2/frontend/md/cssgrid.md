@@ -58,7 +58,7 @@ para que os filhos sejam elementos 'grid'
 
 }
 
-/#grid-container {
+\#grid-container {
 
         grid-template-areas: '. . nome1 nome1 .'
                              'nome2 . nome1 nome1 .'

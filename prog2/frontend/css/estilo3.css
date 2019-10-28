@@ -3,6 +3,8 @@
     Inclui barra de pesquisa.
     Inclui grid-template do <header> com a barra de pesquisa.
     Algumas regras de grid para a <main> também.
+    Inclui tamanho da logo.
+    Inclui tamanho do ícone de opções.
 */
 
 
@@ -18,10 +20,16 @@ header {
                          "pesquisa pesquisa pesquisa";
 }
 
+#opcoes > img {
+    max-width: 17vw;
+    max-height: 20vh;
+}
+
 #logo > img {
     max-width: 47vw;
     max-height: 20vh;
 }
+
 
 main {
     grid-template-rows: auto 10%;

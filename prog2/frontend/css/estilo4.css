@@ -1,6 +1,7 @@
 /*
     Grid-template para o cabeçalho das telas 9, 12-14.
     Inclui tamanho da logo.
+    Inclui tamanho do ícone de opções.
 */
 
 
@@ -9,6 +10,11 @@ header {
     grid-template-columns: 20% auto 30%;
     grid-template-areas: "opcoes logo perfil"
                          "opcoes logo sair";
+}
+
+#opcoes > img {
+    max-width: 17vw;
+    max-height: 27vh;
 }
 
 #logo > img {

@@ -90,7 +90,7 @@ button, input, optgroup, select, textarea {
 }
 
 button, select {
-    text-transform: none; /* Firefox 40+, Internet Explorer 11- */
+    text-transform: none;
 }
 
 button::-moz-focus-inner,
@@ -154,5 +154,5 @@ hr {
 }
 
 img {
-  border-style: none; /* Remove border when inside `a` element in IE 8/9/10 */
+  border-style: none;
 }

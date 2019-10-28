@@ -4,7 +4,7 @@
     Regras gerais para <div>s do header também.
 */
 
-header div {
+header > div {
     display: grid;
     justify-content: center;
     align-items: center;

@@ -12,6 +12,19 @@
     grid-area: pesquisa;
 }
 
+#pesquisa > input {
+    color: black;
+    text-align: left;
+
+    width: 98vw;
+    height: 90%;
+
+    padding: 0 3%;
+
+    border: 1vmin solid gray;
+    /* border-radius: 3%; */
+}
+
 header {
     grid-template-rows: auto auto auto;
     grid-template-columns: 20% auto 30%;
@@ -39,6 +52,13 @@ main {
 
 
 @media (min-width: 1000px) {
+
+    #pesquisa > input {
+        padding: 0.9% 2%;
+
+        border: 0.5vmin solid gray;
+        /* border-radius: 3%; */
+    }
 
     header {
         grid-template-rows: auto auto auto;

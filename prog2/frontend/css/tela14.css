@@ -1,3 +1,15 @@
+#usuarios > button {
+    background-color: #FF6361;
+    color: white;
+}
+
+#produtos > button {
+    background-color: #FFADAD;
+    color: #4D4D4D;
+}
+
+
+
 main {
     grid-template-columns: 100%;
 }

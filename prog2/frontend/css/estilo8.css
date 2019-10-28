@@ -1,0 +1,15 @@
+/*
+    Nas telas 10, 11, 12 e 13:
+    [ USUÁRIOS ] = "desativado"
+    [ PRODUTOS ] = "ativado"
+*/
+
+#usuarios > button {
+    background-color: #FFADAD;
+    color: #4D4D4D;
+}
+
+#produtos > button {
+    background-color: #FF6361;
+    color: white;
+}

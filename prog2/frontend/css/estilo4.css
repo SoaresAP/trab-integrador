@@ -1,8 +1,21 @@
 /*
     Grid-template para o cabeçalho das telas 9, 12-14.
+    Inclui dimensionamento dos botões de usuário, produtos e sair.
     Inclui tamanho da logo.
     Inclui tamanho do ícone de opções.
 */
+
+#usuarios > button {
+    padding: 2vh 5.23vw;
+}
+
+#produtos > button {
+    padding: 2vh 4.9vw;
+}
+
+#sair > button {
+    padding: 1.5vh 5.5vw;
+}
 
 
 header {
@@ -11,6 +24,7 @@ header {
     grid-template-areas: "opcoes logo perfil"
                          "opcoes logo sair";
 }
+
 
 #opcoes > img {
     max-width: 13vw;

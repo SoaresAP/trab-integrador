@@ -8,6 +8,19 @@
 */
 
 
+#usuarios > button {
+    padding: 0.8vh 5.23vw;
+}
+
+#produtos > button {
+    padding: 0.8vh 4.9vw;
+}
+
+#sair > button {
+    padding: 1.5vh 5.5vw;
+}
+
+
 #pesquisa {
     grid-area: pesquisa;
 }

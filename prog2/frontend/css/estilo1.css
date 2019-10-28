@@ -59,6 +59,18 @@ main {
 main > div{
     border: 1px solid black;
 }
+#barra-categorias > nav{
+    margin: 10px;
+}
+#barra-categorias > nav > a{
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: #fff;
+    width: 30vw;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /* -------------------------------- */
 

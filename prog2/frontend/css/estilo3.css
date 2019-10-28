@@ -1,6 +1,8 @@
 /*
-    Faz o swap entre categorias e usuarios-produtos.
-    Inclui pesquisa.
+    Complemento do cabeçalho para as telas 10 e 11.
+    Inclui barra de pesquisa.
+    Inclui grid-template do <header> com a barra de pesquisa.
+    Algumas regras de grid para a <main> também.
 */
 
 
@@ -16,6 +18,10 @@ header {
                          "pesquisa pesquisa pesquisa";
 }
 
+#logo > img {
+    max-width: 47vw;
+    max-height: 20vh;
+}
 
 main {
     grid-template-rows: auto 10%;
@@ -32,6 +38,11 @@ main {
         grid-template-areas: "logo usuarios perfil sair"
                              "logo produtos perfil sair"
                              "pesquisa pesquisa pesquisa pesquisa";
+    }
+
+    #logo > img {
+        max-width: 22vw;
+        max-height: 13.2vh;
     }
 
 }

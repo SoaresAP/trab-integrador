@@ -1,8 +1,14 @@
 /*
-    Cabecalho com logo, usuarios, produtos, perfil e sair.
-    Swap entre opcoes e usuarios-produtos.
+    Define grid-area dos elementos logo, usuarios, produtos, perfil e sair (do cabeçalho).
+    Swap de display entre opcoes e usuarios-produtos.
+    Regras gerais para <div>s do header também.
 */
 
+header div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 
 #usuarios, #produtos {
     display: none;
@@ -10,7 +16,7 @@
 
 #opcoes {
     grid-area: opcoes;
-    display: initial;
+    display: grid;
 }
 
 #usuarios {
@@ -38,7 +44,7 @@
 @media (min-width: 1000px) {
 
     #usuarios, #produtos {
-        display: initial;
+        display: grid;
     }
 
     #opcoes {

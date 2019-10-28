@@ -1,5 +1,6 @@
 /*
-    Cabecalho completo para as telas 9, 12-14.
+    Grid-template para o cabeçalho das telas 9, 12-14.
+    Inclui tamanho da logo.
 */
 
 
@@ -10,6 +11,12 @@ header {
                          "opcoes logo sair";
 }
 
+#logo > img {
+    max-width: 47vw;
+    max-height: 27vh;
+}
+
+
 @media (min-width: 1000px) {
 
     header {
@@ -17,6 +24,11 @@ header {
         grid-template-columns: auto auto auto auto;
         grid-template-areas: "logo usuarios perfil sair"
                              "logo produtos perfil sair";
+    }
+
+    #logo > img {
+        max-width: 22vw;
+        max-height: 17vh;
     }
 
 }

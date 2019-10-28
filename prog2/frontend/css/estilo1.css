@@ -39,6 +39,9 @@
 #barra-categorias {
     display: none;
     grid-area: barra;
+    background-color: #58508D;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 header {
@@ -50,8 +53,11 @@ header {
 main {
     grid-auto-rows: auto;
     grid-gap: 3%;
+    margin: 7px;
 
-    background: lightblue;
+}
+main > div{
+    border: 1px solid black;
 }
 
 /* -------------------------------- */

@@ -29,7 +29,16 @@ header {
     max-height: 15vh;
     margin-top: 5px;
 }
+#perfil > img{
+    width: 5px;
+    height: 5px;
 
+}
+#sair > img{
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+}
 @media (min-width: 1000px) {
 
     header {

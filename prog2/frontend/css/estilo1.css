@@ -12,23 +12,35 @@
 
 #cadastro {
     grid-area: cadastro;
+    margin: 8px;
+
 }
 
 #login {
     grid-area: login;
+    margin: 8px;
+
+
 }
 
 #perfil {
     grid-area: perfil;
+    margin: 8px;
+    border: 1px solid black;
+
+
 
 }
 
 #sair {
     grid-area: sair;
+    margin: 8px;
+
 }
 
 #pesquisa {
     grid-area: pesquisa;
+    margin-top: 10px;
 }
 
 #categorias {
@@ -43,6 +55,28 @@
     margin-top: 10px;
     border-radius: 10px;
 }
+#cadastro > a > img{
+    width: 50px;
+    height: 50px;
+}
+#login > a > img{
+    width: 50px;
+    height: 50px;
+}
+#perfil > a > img{
+    width: 50px;
+    height: 50px;
+
+
+}
+#sair > a > img{
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
 
 header {
     grid-template-rows: auto 30% auto;
@@ -59,6 +93,9 @@ main {
 main > div{
     border: 1px solid black;
 }
+
+
+
 #barra-categorias > nav{
     margin: 10px;
 }
@@ -84,13 +121,17 @@ main > div{
         display: initial;
     }
 
+
     header {
         grid-template-rows: 60% auto;
         grid-template-columns: 25% 45% auto auto;
     }
 
+
+
     main {
         grid-template-columns: auto auto auto auto;
     }
+
 
 }

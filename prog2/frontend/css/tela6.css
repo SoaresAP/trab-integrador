@@ -4,6 +4,20 @@ header {
                          "pesquisa pesquisa pesquisa";
 }
 
+#divBusca{
+    background-color: white;
+    border:solid 1px;
+    border-radius:15px;
+    width:100%;
+    display: inline-block;
+    margin-top: 3%;
+
+}
+
+img{
+    margin-top: 6px;
+}
+
 @media (min-width: 1000px) {
 
     header {
@@ -14,9 +28,9 @@ header {
         background-color: white;
         border:solid 1px;
         border-radius:15px;
-        width:500px;
+        width:400px;
         display: inline-block;
-        margin-top: 3%;
+        margin-top: 4%;
 
     }
 

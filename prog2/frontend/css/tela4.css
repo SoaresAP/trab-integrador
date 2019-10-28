@@ -21,6 +21,10 @@
 .logo{
   margin-top: 1%;
 }
+img{
+  width:300px;
+  height:150px;
+}
 #usuario,#senha{
   margin: 2%;
   width: 60%;
@@ -39,6 +43,10 @@
     height: 400px;
     background: #ffffff;
     border-radius: 2%;
+  }
+  img{
+    width:400px;
+    height:200px;
   }
 
 }

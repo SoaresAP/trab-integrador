@@ -34,8 +34,8 @@ header {
 }
 
 #opcoes > img {
-    max-width: 17vw;
-    max-height: 20vh;
+    max-width: 13vw;
+    max-height: 27vh;
 }
 
 #logo > img {
@@ -43,9 +43,14 @@ header {
     max-height: 20vh;
 }
 
+#perfil > img {
+    max-width: 27vw;
+    max-height: 20vh;
+}
+
 
 main {
-    grid-template-rows: auto 10%;
+    grid-template-rows: 90% 10%;
     grid-template-columns: 100%;
     grid-gap: 5%;
 }
@@ -57,18 +62,22 @@ main {
         padding: 0.9% 2%;
 
         border: 0.5vmin solid gray;
-        /* border-radius: 3%; */
     }
 
     header {
         grid-template-rows: auto auto auto;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-areas: "logo usuarios perfil sair"
                              "logo produtos perfil sair"
                              "pesquisa pesquisa pesquisa pesquisa";
     }
 
     #logo > img {
+        max-width: 22vw;
+        max-height: 13.2vh;
+    }
+
+    #perfil > img {
         max-width: 22vw;
         max-height: 13.2vh;
     }

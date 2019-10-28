@@ -19,13 +19,6 @@
     grid-template-rows: 30% auto;
 
     grid-row-gap: 3%;
-
-    background: orchid;
-}
-
-header > div, main > div {
-    border: 1px solid;
-    background: lightgreen;
 }
 
 

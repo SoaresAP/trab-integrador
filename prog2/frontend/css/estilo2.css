@@ -1,8 +1,19 @@
 /*
     Define grid-area dos elementos logo, usuarios, produtos, perfil e sair (do cabeçalho).
+    Contém estilos para os botões do cabeçalho.
     Swap de display entre opcoes e usuarios-produtos.
     Regras gerais para <div>s do header também.
 */
+
+img, input[type="image"] {
+    border: 1px solid red;
+}
+
+header > div, main > div {
+    border: 1px solid;
+}
+
+
 
 header > div {
     display: grid;

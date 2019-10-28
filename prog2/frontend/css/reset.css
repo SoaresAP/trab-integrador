@@ -67,11 +67,6 @@ li {
 =================================================
 */
 
-input {
-    border-radius: 0;
-    color: inherit;
-}
-
 [disabled] {
     cursor: default;
 }
@@ -87,6 +82,8 @@ textarea {
 
 button, input, optgroup, select, textarea {
     font: inherit;
+    border-radius: 0;
+    color: inherit;
 }
 
 button, select {

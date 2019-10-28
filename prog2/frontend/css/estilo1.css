@@ -7,6 +7,7 @@
 
 #logo {
     grid-area: logo;
+
 }
 
 #cadastro {
@@ -19,6 +20,7 @@
 
 #perfil {
     grid-area: perfil;
+
 }
 
 #sair {

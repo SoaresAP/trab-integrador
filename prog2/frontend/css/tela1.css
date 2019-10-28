@@ -8,13 +8,14 @@ header {
     border:solid 1px;
     border-radius:15px;
     width:95vw;
+    height:30px;
     display: inline-block;
     margin-top: 10px;
 
 }
 #categorias > img {
     max-width: 10vw;
-    max-height: 13vh;
+    max-height: 9vh;
     margin-top: 12px;
     margin-right: 10px;
 }
@@ -25,7 +26,7 @@ header {
 
 #logo > img {
     max-width: 47vw;
-    max-height: 20vh;
+    max-height: 15vh;
     margin-top: 5px;
 }
 
@@ -40,15 +41,15 @@ header {
         background-color: white;
         border:solid 1px;
         border-radius:15px;
-        width:30vw;
-        height: 5vh;
+        width:40vw;
+        height: 30px;
         display: inline-block;
         margin-top: 19px;
 
     }
     #logo > img {
         max-width: 22vw;
-        max-height: 13.2vh;
+        max-height: 11vh;
     }
     #divBusca > img{
         margin-top: 7px;

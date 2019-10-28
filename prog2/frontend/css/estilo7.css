@@ -1,0 +1,28 @@
+/*
+Estilo comum as telas 1,2,3,6,7,8,10 e 11
+*/
+
+#divBusca{
+    background-color: white;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+    display: inline-block;
+    height: 40%;
+
+}
+
+
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    padding-top: 3px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    width: 90%;
+    text-align: left;
+    color: gray;
+
+}

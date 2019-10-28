@@ -4,11 +4,24 @@ header {
                          "pesquisa pesquisa pesquisa";
 }
 
+img{
+    margin-top: 6px;
+}
+
 @media (min-width: 1000px) {
 
     header {
         grid-template-areas: "logo pesquisa cadastro login"
                              "barra barra barra barra";
+    }
+    #divBusca{
+        background-color: white;
+        border:solid 1px;
+        border-radius:15px;
+        width:500px;
+        display: inline-block;
+        margin-top: 3%;
+
     }
 
 }

@@ -18,5 +18,14 @@ header {
 
         background: green;
     }
+    #divBusca{
+        background-color: white;
+        border:solid 1px;
+        border-radius:15px;
+        width:500px;
+        display: inline-block;
+        margin-top: 3%;
+
+    }
 
 }

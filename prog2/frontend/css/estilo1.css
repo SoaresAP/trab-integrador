@@ -11,10 +11,15 @@
 
 #cadastro {
     grid-area: cadastro;
+    margin: 8px;
+
 }
 
 #login {
     grid-area: login;
+    margin: 8px;
+
+
 }
 
 #perfil {
@@ -23,10 +28,13 @@
 
 #sair {
     grid-area: sair;
+    margin: 8px;
+
 }
 
 #pesquisa {
     grid-area: pesquisa;
+    margin-top: 10px;
 }
 
 #categorias {
@@ -38,6 +46,28 @@
     display: none;
     grid-area: barra;
 }
+#cadastro > a > img{
+    width: 50px;
+    height: 50px;
+}
+#login > a > img{
+    width: 50px;
+    height: 50px;
+}
+#perfil > a > img{
+    width: 50px;
+    height: 50px;
+
+
+}
+#sair > a > img{
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
 
 header {
     grid-template-rows: auto 30% auto;
@@ -64,13 +94,17 @@ main {
         display: initial;
     }
 
+
     header {
         grid-template-rows: 60% auto;
         grid-template-columns: 25% 45% auto auto;
     }
 
+
+
     main {
         grid-template-columns: auto auto auto auto;
     }
+
 
 }

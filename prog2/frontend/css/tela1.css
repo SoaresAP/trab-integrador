@@ -7,23 +7,26 @@ header {
     background-color: white;
     border:solid 1px;
     border-radius:15px;
-    width:50vw;
+    width:95vw;
     display: inline-block;
     margin-top: 10px;
 
 }
 #categorias > img {
-    max-width: 17vw;
-    max-height: 20vh;
+    max-width: 10vw;
+    max-height: 13vh;
+    margin-top: 12px;
+    margin-right: 10px;
 }
 
 #divBusca > img{
-    margin-top: 7px;
+    margin-top: 3px;
 }
 
 #logo > img {
     max-width: 47vw;
     max-height: 20vh;
+    margin-top: 5px;
 }
 
 
@@ -46,6 +49,9 @@ header {
     #logo > img {
         max-width: 22vw;
         max-height: 13.2vh;
+    }
+    #divBusca > img{
+        margin-top: 7px;
     }
 
 

@@ -14,8 +14,9 @@
   background: #ffffff;
   border-radius: 2%;
 }
-.entrada{
 
+
+.entrada{
   height: 50%;
 }
 .logo{
@@ -33,7 +34,10 @@ img{
   font-family: Ubuntu;
   border-radius: 1px;
 }
+#usuario:hover,#senha:hover{
+  background-color: #e0bcdd;
 
+}
 
 
 @media (min-width: 1000px) {

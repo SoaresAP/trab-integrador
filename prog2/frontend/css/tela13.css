@@ -9,3 +9,7 @@
 #i-alterar {
     grid-column: 2 / 3;
 }
+#logo > img{
+  width: 100%;
+  height: 100%;
+}

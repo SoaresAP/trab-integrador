@@ -8,7 +8,7 @@ img, input[type="image"] {
     border: 1px solid red;
 }
 
-header > div, main > div {
+/* header > div, */main > div {
     border: 1px solid blue;
 }
 

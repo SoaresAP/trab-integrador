@@ -7,34 +7,42 @@
 
 #logo {
     grid-area: logo;
+
 }
 
 #cadastro {
     grid-area: cadastro;
     margin: 8px;
+    border: 1px solid black;
 
 }
 
 #login {
     grid-area: login;
     margin: 8px;
+    border: 1px solid black;
 
 
 }
 
 #perfil {
     grid-area: perfil;
+    margin: 8px;
+    border: 1px solid black;
+    height: 11vh;
+
 }
 
 #sair {
     grid-area: sair;
     margin: 8px;
+    border: 1px solid black;
+    height: 11vh;
 
 }
 
 #pesquisa {
     grid-area: pesquisa;
-    margin-top: 10px;
 }
 
 #categorias {
@@ -45,27 +53,10 @@
 #barra-categorias {
     display: none;
     grid-area: barra;
+    background-color: #58508D;
+    margin-top: 15px;
+    border-radius: 10px;
 }
-#cadastro > a > img{
-    width: 50px;
-    height: 50px;
-}
-#login > a > img{
-    width: 50px;
-    height: 50px;
-}
-#perfil > a > img{
-    width: 50px;
-    height: 50px;
-
-
-}
-#sair > a > img{
-    width: 50px;
-    height: 50px;
-
-}
-
 
 header {
     grid-template-rows: auto 30% auto;
@@ -76,8 +67,52 @@ header {
 main {
     grid-auto-rows: auto;
     grid-gap: 3%;
+    margin: 7px;
+    margin-top: 17px;
+
+}
+main > div{
+    border: 1px solid black;
+}
+#barra-categorias > nav{
+    margin: 10px;
+}
+#barra-categorias > nav > a{
+    font-size: 20px;
+    font-family: Ubuntu;
+    color: #fff;
+    width: 30vw;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#cadastro > a > img{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+
+
+}
+#login > a > img{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+
+}
+#perfil > a > img{
+    width: 60px;
+    height: 68px;
+
+
+}
+#sair > a > img{
+    width: 60px;
+    height: 68px;
+
+    
 }
 
+/* -------------------------------- */
 
 @media (min-width: 1000px) {
 
@@ -89,17 +124,16 @@ main {
         display: initial;
     }
 
-
     header {
         grid-template-rows: 60% auto;
         grid-template-columns: 25% 45% auto auto;
     }
 
-
-
     main {
         grid-template-columns: auto auto auto auto;
     }
+
+
 
 
 }

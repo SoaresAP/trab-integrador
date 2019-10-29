@@ -1,7 +1,12 @@
 /*
 Estilo comum as telas 1,2,3,6,7,8,10 e 11
 */
-
+main{
+    padding-top: 20px;
+}
+#barra-categorias{
+    margin-top: 30px;
+}
 #divBusca{
     background-color: white;
     border:solid 1px;

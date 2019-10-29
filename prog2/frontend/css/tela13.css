@@ -1,11 +1,39 @@
+h1 {
+    color: #ea8000;
+    border-color: #ea8000;
+}
+
+
 #envio {
     grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+
+    justify-content: center;
+    align-content: center;
+}
+
+#i-excluir, #i-alterar {
+    padding: 1vh 10vw;
 }
 
 #i-excluir {
+    background-color: #c93636;
+    color: white;
+
     grid-column: 1 / 2;
 }
 
 #i-alterar {
+    background-color: #ea8000;
+    color: white;
+
     grid-column: 2 / 3;
+}
+
+@media (min-width: 1000px) {
+
+    #i-excluir, #i-alterar {
+        padding: 1vh 15vw;
+    }
+
 }

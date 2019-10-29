@@ -4,9 +4,6 @@
     Regras gerais para <div>s do header também.
 */
 
-img, input[type="image"] {
-    border: 1px solid red;
-}
 
 /* header > div, */main > div {
     border: 1px solid blue;

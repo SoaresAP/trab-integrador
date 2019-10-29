@@ -1,1 +1,15 @@
+h1 {
+    color: #41c936;
+    border-color: #41c936;
+}
 
+#i-cadastrar {
+    background-color: #41c936;
+    color: white;
+
+    padding: 1vh 20vw;
+}
+
+#envio {
+    justify-content: center;
+}

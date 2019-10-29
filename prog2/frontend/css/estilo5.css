@@ -5,22 +5,37 @@
 
 #titulo {
     grid-area: titulo;
+
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    font-weight: bold;
+
+    padding: 1vh 15vw;
+
+    border: 3px solid;
 }
 
 input[type="text"], label {
     margin: 2% 0;
 }
 
-input[type="text"], input[type="submit"], textarea {
-    border: 1px solid darkblue;
+input[type="text"], textarea, input[type="image"] {
+    border: 2px solid black;
 }
 
 input[type="text"], textarea {
+    padding: 0 3vw;
+
     text-align: justify;
 }
 
 label {
+
     text-align: right;
+
     margin-right: 3%;
 }
 
@@ -76,6 +91,8 @@ label {
 
 #envio {
     grid-area: envio;
+
+    align-content: center;
 }
 
 
@@ -95,6 +112,10 @@ main {
 
 
 @media (min-width: 1000px) {
+
+    h1 {
+        padding: 1vh 30vw;
+    }
 
     #i-img {
         width: 150px;

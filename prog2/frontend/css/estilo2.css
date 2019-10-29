@@ -5,11 +5,6 @@
 */
 
 
-/* header > div, */main > div {
-    border: 1px solid blue;
-}
-
-
 #sair > button {
     background-color: #BC5090;
     color: white;

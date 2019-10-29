@@ -67,8 +67,6 @@
 }
 
 
-
-
 header {
     grid-template-rows: auto 30% auto;
     grid-template-columns: 20% auto 30%;
@@ -78,11 +76,8 @@ header {
 main {
     grid-auto-rows: auto;
     grid-gap: 3%;
-
-    background: lightblue;
 }
 
-/* -------------------------------- */
 
 @media (min-width: 1000px) {
 

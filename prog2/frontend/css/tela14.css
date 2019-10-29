@@ -19,9 +19,32 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
-    padding: 1vmin 0;
+tbody {
     border: 1px solid;
+}
+
+th, td {
+    padding: 1vh 2vw;
+}
+
+th {
+    background-color: #58508D;
+    color: white;
+}
+
+td {
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+}
+
+tr:last-child > td {
+    border: 0;
+}
+
+
+td img {
+    max-width: 30px;
+    max-height: 30px;
 }
 
 @media (min-width: 1000px) {

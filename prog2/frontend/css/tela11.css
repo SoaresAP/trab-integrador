@@ -34,15 +34,18 @@ td img {
 #tabela-mobile {
     display: initial;
 
-
+    font-size: 0.8em;
 }
 
 #tabela-desktop {
     display: none;
+
+    font-size: 1em;
 }
 
 
 @media (min-width: 1000px) {
+
     #tabela-mobile {
         display: none;
     }

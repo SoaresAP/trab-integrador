@@ -8,44 +8,25 @@
 */
 
 
-#usuarios > a {
+#pesquisa {
+    visibility: visible;
+}
+
+
+#usuarios a {
     padding: 0.8vh 5.23vw;
 }
 
-#produtos > a {
+#produtos a {
     padding: 0.8vh 4.9vw;
 }
 
-#sair > a {
+#sair a {
     padding: 1.5vh 5.5vw;
 }
 
 
-#pesquisa {
-    grid-area: pesquisa;
-}
-
-#pesquisa > input {
-    color: black;
-    text-align: left;
-
-    width: 98vw;
-    height: 90%;
-
-    padding: 0 3%;
-
-    border: 1vmin solid gray;
-}
-
-header {
-    grid-template-rows: auto auto auto;
-    grid-template-columns: 20% auto 30%;
-    grid-template-areas: "opcoes logo perfil"
-                         "opcoes logo sair"
-                         "pesquisa pesquisa pesquisa";
-}
-
-#opcoes > img {
+#opcoes img {
     max-width: 13vw;
     max-height: 27vh;
 }
@@ -55,7 +36,7 @@ header {
     max-height: 20vh;
 }
 
-#perfil > img {
+#perfil img {
     max-width: 27vw;
     max-height: 20vh;
 }
@@ -84,7 +65,7 @@ main {
     align-items: center;
 }
 
-#novo-produto > a {
+#novo-produto a {
     background-color: #41c936;
     color: white;
 
@@ -94,32 +75,18 @@ main {
 
 @media (min-width: 1000px) {
 
-    #pesquisa > input {
-        padding: 0.9% 2%;
-
-        border: 0.5vmin solid gray;
-    }
-
-    header {
-        grid-template-rows: auto auto auto;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-template-areas: "logo usuarios perfil sair"
-                             "logo produtos perfil sair"
-                             "pesquisa pesquisa pesquisa pesquisa";
-    }
-
     #logo img {
         max-width: 22vw;
         max-height: 13.2vh;
     }
 
-    #perfil > img {
+    #perfil img {
         max-width: 22vw;
         max-height: 13.2vh;
     }
 
 
-    #novo-produto > a {
+    #novo-produto a {
         background-color: #41c936;
         color: white;
 

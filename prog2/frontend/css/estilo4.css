@@ -1,64 +1,11 @@
 /*
-    Grid-template para o cabeçalho das telas 9, 12-14.
-    Inclui dimensionamento dos botões de usuário, produtos e sair.
-    Inclui tamanho da logo.
-    Inclui tamanho do ícone de opções.
+    Nas telas 9 e 12-14, a pesquisa possui visibility:hidden.
 */
 
-#usuarios > a {
-    padding: 2vh 5.23vw;
-}
 
-#produtos > a {
-    padding: 2vh 4.9vw;
-}
-
-#sair > a {
-    padding: 2vh 6vw;
+#pesquisa {
+    visibility: hidden;
 }
 
 
-header {
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 20% auto 30%;
-    grid-template-areas: "opcoes logo perfil"
-                         "opcoes logo sair";
-}
-
-
-#opcoes > img {
-    max-width: 13vw;
-    max-height: 27vh;
-}
-
-#logo img {
-    max-width: 47vw;
-    max-height: 27vh;
-}
-
-#perfil > img {
-    max-width: 22vw;
-    max-height: 22vh;
-}
-
-
-@media (min-width: 1000px) {
-
-    header {
-        grid-template-rows: 50% 50%;
-        grid-template-columns: 25% 25% auto 25%;
-        grid-template-areas: "logo usuarios perfil sair"
-                             "logo produtos perfil sair";
-    }
-
-    #logo img {
-        max-width: 23vw;
-        max-height: 18vh;
-    }
-
-    #perfil > img {
-        max-width: 22vw;
-        max-height: 17vh;
-    }
-
-}
+@media (min-width: 1000px) {}

@@ -20,9 +20,7 @@
     grid-template-rows: 30% auto;
 
     grid-row-gap: 3%;
-
 }
-
 
 
 @media (min-width: 1000px) {

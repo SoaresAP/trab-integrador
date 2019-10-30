@@ -13,9 +13,13 @@
 h1 {
     font-weight: bold;
 
-    padding: 1vh 15vw;
+    padding: 1vh 8vw;
 
     border: 3px solid;
+}
+
+h1, #envio * {
+    font-size: calc(5vw);
 }
 
 input[type="text"], label {
@@ -27,12 +31,15 @@ input[type="text"], textarea, input[type="image"] {
 }
 
 input[type="text"], textarea {
+    font-size: calc(4vw);
+
     padding: 0 3vw;
 
     text-align: justify;
 }
 
 label {
+    font-size: calc(5vw);
 
     text-align: right;
 
@@ -117,9 +124,17 @@ main {
         padding: 1vh 30vw;
     }
 
+    h1, #envio * {
+        font-size: 1em;
+    }
+
     #i-img {
         width: 150px;
         height: 150px;
+    }
+
+    input[type="text"], textarea, label {
+        font-size: 1em;
     }
 
     #formulario {

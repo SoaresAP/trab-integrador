@@ -57,10 +57,12 @@ header > div {
 #pesquisa input {
     text-align: left;
 
+    font-size: calc(1.5vh + 2.5vw);
+
     width: 98vw;
     height: 90%;
 
-    padding: 0 3%;
+    padding: 0 3vw;
 
     border: 1vmin solid gray;
 }
@@ -75,6 +77,8 @@ header > div {
 }
 
 #sair a {
+    font-size: calc(2vh + 2vw);
+
     padding: 1.5vh 5.5vw;
 
     background-color: #BC5090;
@@ -103,8 +107,6 @@ header > div {
 }
 
 
-
-
 @media (min-width: 1000px) {
 
     header {
@@ -117,9 +119,16 @@ header > div {
 
 
     #pesquisa input {
-        padding: 0.9% 2%;
+        font-size: calc(1.4vh + 1vw);
+
+        padding: 1.5vh 2vw;
 
         border: 0.5vmin solid gray;
+    }
+
+
+    #sair a {
+        font-size: 1em;
     }
 
 

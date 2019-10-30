@@ -69,7 +69,8 @@ main {
     background-color: #41c936;
     color: white;
 
-    padding: 1vh 20vw;
+    padding: 1vh 12vw;
+    max-width: 95vw;
 }
 
 
@@ -91,6 +92,7 @@ main {
         color: white;
 
         padding: 1.5vh 30vw;
+        max-width: 85vw;
     }
 
 }

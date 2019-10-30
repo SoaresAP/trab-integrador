@@ -5,7 +5,7 @@
 */
 
 
-#sair > button {
+#sair > a {
     background-color: #BC5090;
     color: white;
 }
@@ -23,6 +23,7 @@ header > div {
 
 #opcoes {
     grid-area: opcoes;
+
     display: grid;
 }
 

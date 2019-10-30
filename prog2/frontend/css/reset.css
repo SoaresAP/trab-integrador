@@ -18,6 +18,8 @@ Adaptado de:
     box-sizing: border-box;
     vertical-align: baseline;
     font-family: sans-serif;
+    font-size: 1em;
+    color: black;
 }
 
 /*
@@ -41,14 +43,15 @@ body {
 =================================================
 */
 
-a {
+a, a:link, a:visited, a:active, a:hover, a:link:active, a:visited:active {
     text-decoration: none;
     background-color: transparent;
+    color: inherit;
+    cursor: default;
 }
 
-
-a:active, a:hover {
-    outline-width: 0;
+a:hover {
+    cursor: pointer;
 }
 
 /*
@@ -56,6 +59,8 @@ a:active, a:hover {
 ||                      Listas                 ||
 =================================================
 */
+
+
 
 li {
     list-style: none;

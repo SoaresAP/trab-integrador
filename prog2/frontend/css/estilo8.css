@@ -4,12 +4,12 @@
     [ PRODUTOS ] = "ativado"
 */
 
-#usuarios > button {
+#usuarios > a {
     background-color: #FFADAD;
     color: #4D4D4D;
 }
 
-#produtos > button {
+#produtos > a {
     background-color: #FF6361;
     color: white;
 }

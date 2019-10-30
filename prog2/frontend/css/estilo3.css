@@ -8,15 +8,15 @@
 */
 
 
-#usuarios > button {
+#usuarios > a {
     padding: 0.8vh 5.23vw;
 }
 
-#produtos > button {
+#produtos > a {
     padding: 0.8vh 4.9vw;
 }
 
-#sair > button {
+#sair > a {
     padding: 1.5vh 5.5vw;
 }
 
@@ -50,7 +50,7 @@ header {
     max-height: 27vh;
 }
 
-#logo > img {
+#logo img {
     max-width: 47vw;
     max-height: 20vh;
 }
@@ -84,7 +84,7 @@ main {
     align-items: center;
 }
 
-#novo-produto > button {
+#novo-produto > a {
     background-color: #41c936;
     color: white;
 
@@ -108,7 +108,7 @@ main {
                              "pesquisa pesquisa pesquisa pesquisa";
     }
 
-    #logo > img {
+    #logo img {
         max-width: 22vw;
         max-height: 13.2vh;
     }
@@ -119,7 +119,7 @@ main {
     }
 
 
-    #novo-produto > button {
+    #novo-produto > a {
         background-color: #41c936;
         color: white;
 

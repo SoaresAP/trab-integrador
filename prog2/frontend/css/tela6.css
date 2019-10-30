@@ -24,7 +24,7 @@ header {
     margin-top: 3px;
 }
 
-#logo > img {
+#logo img {
     max-width: 47vw;
     max-height: 15vh;
     margin-top: 5px;
@@ -55,7 +55,7 @@ header {
         margin-top: 19px;
 
     }
-    #logo > img {
+    #logo img {
         max-width: 22vw;
         max-height: 11vh;
     }

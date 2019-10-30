@@ -5,15 +5,15 @@
     Inclui tamanho do ícone de opções.
 */
 
-#usuarios > button {
+#usuarios > a {
     padding: 2vh 5.23vw;
 }
 
-#produtos > button {
+#produtos > a {
     padding: 2vh 4.9vw;
 }
 
-#sair > button {
+#sair > a {
     padding: 2vh 6vw;
 }
 
@@ -31,7 +31,7 @@ header {
     max-height: 27vh;
 }
 
-#logo > img {
+#logo img {
     max-width: 47vw;
     max-height: 27vh;
 }
@@ -51,7 +51,7 @@ header {
                              "logo produtos perfil sair";
     }
 
-    #logo > img {
+    #logo img {
         max-width: 23vw;
         max-height: 18vh;
     }

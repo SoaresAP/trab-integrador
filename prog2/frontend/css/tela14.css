@@ -1,5 +1,7 @@
+@import "cores.css";
+
 #usuarios a {
-    background-color: #FF6361;
+    background-color: var(--salmao);
     color: white;
 }
 

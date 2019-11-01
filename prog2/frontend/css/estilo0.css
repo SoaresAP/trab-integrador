@@ -10,6 +10,7 @@
 
 .grid-conteiner {
     display: grid;
+    max-height: 100vh;
 }
 
 
@@ -18,9 +19,7 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    grid-template-rows: 30% auto;
-
-    grid-row-gap: 3%;
+    grid-template-rows: 20% auto;
 }
 
 
@@ -28,6 +27,8 @@
 
     #tela {
         grid-template-rows: 20% auto;
+        border: 1px solid black;
     }
+
 
 }

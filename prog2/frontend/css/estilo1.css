@@ -10,20 +10,7 @@
 
 }
 
-#cadastro {
-    grid-area: cadastro;
-    margin: 8px;
-    border: 1px solid black;
 
-}
-
-#login {
-    grid-area: login;
-    margin: 8px;
-    border: 1px solid black;
-
-
-}
 
 #perfil {
     grid-area: perfil;
@@ -63,6 +50,7 @@
 header {
     grid-template-rows: auto 30% auto;
     grid-template-columns: 20% auto 30%;
+    border: 1px solid black;
 }
 
 
@@ -70,7 +58,7 @@ main {
     grid-auto-rows: auto;
     grid-gap: 3%;
     margin: 7px;
-    margin-top: 17px;
+    margin-top: 30px;
 
 }
 main > div{
@@ -82,16 +70,15 @@ main > div{
 }
 
 #cadastro > a > img{
-    width: 50px;
+    max-width: 100vw;
     height: 50px;
     margin: 3px;
 
 
 }
 #login > a > img{
-    width: 50px;
+    max-width: 50px;
     height: 50px;
-    margin: 3px;
 
 }
 #perfil > a > img{
@@ -132,7 +119,7 @@ main > div{
 
 
     header {
-        grid-template-rows: 60% auto;
+        grid-template-rows: 80% auto;
         grid-template-columns: 25% 45% auto auto;
     }
 
@@ -140,6 +127,33 @@ main > div{
         grid-template-columns: auto auto auto auto;
     }
 
+    #cadastro {
+        grid-area: cadastro;
+        border: 1px solid black;
+        max-height: 100vh;
+        padding-top: 30px;
+
+
+    }
+
+    #login {
+        grid-area: login;
+        border: 1px solid black;
+        max-height: 100vh;
+        padding-top: 30px;
+
+
+    }
+}
+@media (max-width: 1000px) {
+
+  #cadastro > a > img{
+      display: none;
+  }
+  #login > a > img{
+      display: none;
+
+  }
 
 
 

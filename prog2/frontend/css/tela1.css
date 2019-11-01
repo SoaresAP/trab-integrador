@@ -1,6 +1,6 @@
 header {
-    grid-template-areas: "categorias logo cadastro"
-                         "categorias logo login"
+    grid-template-areas: "categorias logo logo"
+                         "categorias logo logo"
                          "pesquisa pesquisa pesquisa";
 }
 #divBusca{

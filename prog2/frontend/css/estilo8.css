@@ -4,12 +4,15 @@
     [ PRODUTOS ] = "ativado"
 */
 
+@import "cores.css";
+
+
 #usuarios a {
-    background-color: #FFADAD;
-    color: #4D4D4D;
+    background-color: var(--salmao-apagado);
+    color: var(--salmao-apagado-fg);
 }
 
 #produtos a {
-    background-color: #FF6361;
+    background-color: var(--salmao);
     color: white;
 }

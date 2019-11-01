@@ -6,8 +6,8 @@
 }
 
 #produtos a {
-    background-color: #FFADAD;
-    color: #4D4D4D;
+    background-color: var(--salmao-apagado);
+    color: var(--salmao-apagado-fg);
 }
 
 
@@ -33,7 +33,7 @@ th, td {
 }
 
 th {
-    background-color: #58508D;
+    background-color: var(--azul-roxo);
     color: white;
 }
 

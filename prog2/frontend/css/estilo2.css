@@ -7,6 +7,9 @@
 */
 
 
+@import "cores.css";
+
+
 #opcoes {
     display: grid;
 
@@ -81,7 +84,7 @@ header > div {
 
     padding: 1.5vh 5.5vw;
 
-    background-color: #BC5090;
+    background-color: var(--rosa-lilas);
     color: white;
 }
 

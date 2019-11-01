@@ -5,6 +5,9 @@
  */
 
 
+@import "cores.css";
+
+
 #logo {
     grid-area: logo;
 
@@ -45,7 +48,7 @@
 #barra-categorias {
     display: none;
     grid-area: barra;
-    background-color: #58508D;
+    background-color: var(--azul-roxo);
     margin-top: 15px;
     border-radius: 10px;
     margin-top: 30px;
@@ -165,7 +168,7 @@ main > div{
   }
 
   .barra{
-      background-color:#003F5C;
+      background-color: var(--azul-forte);
       height: 100%;
       width: 300px;
       position: absolute;
@@ -190,7 +193,7 @@ main > div{
       transition: all .2s linear;
       color: #fff;
       text-align: center;
-      border-bottom: 2px solid #003F5C;
+      border-bottom: 2px solid var(--azul-forte);
   }
   .link:hover{
       background-color: #050542;

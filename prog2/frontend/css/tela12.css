@@ -1,10 +1,13 @@
+@import "cores.css";
+
+
 h1 {
-    color: #41c936;
-    border-color: #41c936;
+    color: var(--verde);
+    border-color: var(--verde);
 }
 
 #i-cadastrar {
-    background-color: #41c936;
+    background-color: var(--verde);
     color: white;
 
     padding: 1vh 20vw;

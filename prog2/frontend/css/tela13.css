@@ -1,6 +1,6 @@
 h1 {
-    color: #ea8000;
-    border-color: #ea8000;
+    color: var(--laranja);
+    border-color: var(--laranja);
 }
 
 
@@ -17,14 +17,14 @@ h1 {
 }
 
 #i-excluir {
-    background-color: #c93636;
+    background-color: var(--vermelho);
     color: white;
 
     grid-column: 1 / 2;
 }
 
 #i-alterar {
-    background-color: #ea8000;
+    background-color: var(--laranja);
     color: white;
 
     grid-column: 2 / 3;

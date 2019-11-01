@@ -37,6 +37,10 @@
     grid-area: categorias;
 
 }
+#categorias > nav {
+    display: initial;
+
+}
 
 #barra-categorias {
     display: none;
@@ -46,6 +50,7 @@
     border-radius: 10px;
     margin-top: 30px;
 }
+
 
 header {
     grid-template-rows: auto 30% auto;
@@ -153,6 +158,42 @@ main > div{
   #login > a > img{
       display: none;
 
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
+
+  .barra{
+      background-color:#003F5C;
+      height: 100%;
+      width: 300px;
+      position: absolute;
+      transition: all .2s linear;
+
+
+  }
+  nav > a{
+      text-decoration: none;
+  }
+
+  nav{
+      width: 100%;
+      position: absolute;
+
+  }
+  .link{
+      background-color: #494950;
+      padding: 20px;
+      font-family: Ubuntu;
+      font-size: 12pt;
+      transition: all .2s linear;
+      color: #fff;
+      text-align: center;
+      border-bottom: 2px solid #003F5C;
+  }
+  .link:hover{
+      background-color: #050542;
   }
 
 

@@ -13,18 +13,23 @@
   height: 300px;
   background: #ffffff;
   border-radius: 2%;
+  border: 1px solid black;
 }
 
 
 .entrada{
   height: 50%;
+  padding-top: 15px;
+
 }
 .logo{
   margin-top: 1%;
+  text-align: center;
+  border-bottom: 2px solid black;
 }
 img{
-  width:300px;
-  height:150px;
+  width:250px;
+  height:125px;
 }
 #usuario,#senha{
   margin: 2%;
@@ -38,6 +43,15 @@ img{
   background-color: #e0bcdd;
 
 }
+button{
+  color: white;
+  font-size: 25px;
+  font-family: Ubuntu;
+  width: 180px;
+  border-radius: 2px;
+  background-color: #8B008B;
+  margin-top: 15px;
+}
 
 
 @media (min-width: 1000px) {
@@ -49,8 +63,17 @@ img{
     border-radius: 2%;
   }
   img{
-    width:400px;
-    height:200px;
+    width:300px;
+    height:150px;
+  }
+  button{
+    color: white;
+    font-size: 30px;
+    font-family: Ubuntu;
+    width: 240px;
+    border-radius: 2px;
+    background-color: #8B008B;
+    margin-top: 30px;
   }
 
 }

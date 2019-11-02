@@ -46,10 +46,44 @@ img{
     height: 500px;
     background: #ffffff;
     border-radius: 2%;
+    text-align: center;
+    border: 1px solid black
   }
-  img{
+  .logo{
+    text-align: center;
     width:400px;
     height:200px;
+    border-bottom: 2px solid black;
+  }
+  .logo > img{
+    margin: 30px;
+  }
+
+  .textos{
+
+      width: 160px;
+      display: inline-block;
+      text-align: right;
+  }
+  p{
+      padding-top: 40px;
+      font-family: Ubuntu;
+
+  }
+  .entrada{
+
+      width: 200px;
+      display: inline-block;
+      text-align: left;
+  }
+  button{
+      text-align: center;
+      background-color: #8B008B;
+      font-family: Ubuntu;
+      color: white;
+      width: 150px;
+      height: 30px;
+      border-radius: 2px;
   }
 
 }

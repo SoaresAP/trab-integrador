@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/estilo7.css">
 
         <link rel="stylesheet" href="css/tela1.css">
+
     </head>
 
     <body>
@@ -22,7 +23,7 @@
                 <div id="categorias">
                     <img src="img/menu.png" alt="opcoes">
                 </div>
-                <div class="barra">
+                <div class="barra" tabindex="0">
                     <nav>
                         <a href="#"><div class="link">UNHAS</div></a>
                         <a href="#"><div class="link">MAQUIAGEM</div></a>
@@ -132,5 +133,25 @@
             </main>
         </div>
 
+        <script>
+
+            document.querySelector('#categorias > img').onclick = function(){
+                document.getElementsByClassName('barra')[0].style.display = 'grid';
+                document.getElementsByClassName('barra')[0].focus();
+
+            }
+        
+            document.querySelector('.barra').onblur = function(){
+
+                document.getElementsByClassName('barra')[0].style.display = 'none';
+
+            }
+
+
+        </script>
+
+
+
     </body>
+
 </html>

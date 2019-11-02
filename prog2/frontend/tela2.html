@@ -27,7 +27,7 @@
                 <div id="logo">
                     <img src="img/vitari.jpg">
                 </div>
-                <div class="barra">
+                <div class="barra" tabindex="0">
                     <nav>
                         <a href="#"><div class="link">UNHAS</div></a>
                         <a href="#"><div class="link">MAQUIAGEM</div></a>
@@ -132,6 +132,23 @@
                 </div>
             </main>
         </div>
+
+        <script>
+
+            document.querySelector('#categorias > img').onclick = function(){
+                document.getElementsByClassName('barra')[0].style.display = 'grid';
+                document.getElementsByClassName('barra')[0].focus();
+
+            }
+
+            document.querySelector('.barra').onblur = function(){
+
+                document.getElementsByClassName('barra')[0].style.display = 'none';
+
+            }
+
+
+        </script>
 
     </body>
 </html>

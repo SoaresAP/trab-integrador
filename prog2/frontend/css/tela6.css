@@ -13,6 +13,10 @@ header {
     margin-top: 10px;
 
 }
+#divBusca > input{
+    display: absolute;
+    text-align: left;
+}
 #categorias > img {
     max-width: 10vw;
     max-height: 9vh;
@@ -22,6 +26,7 @@ header {
 
 #divBusca > img{
     margin-top: 3px;
+
 }
 
 #logo img {
@@ -51,10 +56,11 @@ header {
         border-radius:15px;
         width:40vw;
         height: 30px;
-        display: inline-block;
         margin-top: 19px;
-
+        padding-left:5px;
+        border: 1px solid black;
     }
+
     #logo img {
         max-width: 22vw;
         max-height: 11vh;

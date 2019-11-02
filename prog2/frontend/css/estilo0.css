@@ -5,16 +5,15 @@
 * {
     text-align: center;
 }
-#divBusca{
-    text-align: left;
-}
-
-
-
 
 
 .grid-conteiner {
     display: grid;
+}
+
+
+#divBusca{
+    text-align: left;
 }
 
 

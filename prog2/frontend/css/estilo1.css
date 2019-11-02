@@ -14,7 +14,6 @@
 }
 
 
-
 #perfil {
     grid-area: perfil;
     margin: 8px;
@@ -42,7 +41,6 @@
 }
 #categorias > nav {
     display: initial;
-
 }
 
 #barra-categorias {
@@ -171,7 +169,7 @@ main > div{
   .barra{
       background-color: var(--azul-forte);
       height: 100%;
-      width: 300px;
+      width: 60%;
       position: absolute;
       transition: all .2s linear;
 

@@ -1,0 +1,7 @@
+@import "cores.css";
+
+
+.link {
+    background-color: var(--salmao-apagado);
+    color: var(--salmao-apagado-fg);
+}

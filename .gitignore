@@ -5,3 +5,7 @@
 # Swap files
 
 *.swp
+
+#brModelo stuff
+
+*.chc

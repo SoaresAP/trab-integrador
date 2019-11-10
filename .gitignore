@@ -1,4 +1,4 @@
-#LibreOffice locks
+# LibreOffice locks
 
 *.~lock*
 
@@ -6,6 +6,6 @@
 
 *.swp
 
-#brModelo stuff
+# brModelo stuff
 
 *.chc

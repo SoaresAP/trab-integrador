@@ -6,17 +6,17 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="../css/reset.css">
 
-        <link rel="stylesheet" href="css/estilo0.css">
-        <link rel="stylesheet" href="css/estilo2.css">
-        <link rel="stylesheet" href="css/estilo3.css">
-        <link rel="stylesheet" href="css/estilo8.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo2.css">
+        <link rel="stylesheet" href="../css/estilo3.css">
+        <link rel="stylesheet" href="../css/estilo8.css">
 
-        <link rel="stylesheet" href="css/tela11.css">
+        <link rel="stylesheet" href="../css/tela11.css">
 
-        <link rel="stylesheet" href="css/menu-lateral.css">
-        <link rel="stylesheet" href="css/menu-lateral-2.css">
+        <link rel="stylesheet" href="../css/menu-lateral.css">
+        <link rel="stylesheet" href="../css/menu-lateral-2.css">
     </head>
 
     <body>
@@ -26,33 +26,33 @@
             <header class="grid-conteiner">
                 <div class="barra">
                     <nav>
-                        <a href="tela14.html">
+                        <a href="tela14.php">
                             <div class="link">USUÁRIOS</div>
                         </a>
-                        <a href="tela10.html">
+                        <a href="tela10.php">
                             <div class="link">PRODUTOS</div>
                         </a>
                     </nav>
                 </div>
 
                 <div id="opcoes">
-                    <img src="img/menu.png" alt="opcoes">
+                    <img src="../img/menu.png" alt="opcoes">
                 </div>
                 <div id="usuarios">
-                    <a href="tela14.html">USUÁRIOS</a>
+                    <a href="tela14.php">USUÁRIOS</a>
                 </div>
                 <div id="produtos">
-                    <a href="tela10.html">PRODUTOS</a>
+                    <a href="tela10.php">PRODUTOS</a>
                 </div>
 
                 <div id="logo">
-                    <a href="tela1.html">
-                        <img src="img/vitari.jpg" alt="logo">
+                    <a href="tela1.php">
+                        <img src="../img/vitari.jpg" alt="logo">
                     </a>
                 </div>
                 <div id="perfil">
                     <a href="#">
-                        <img src="img/perfil.png" alt="perfil">
+                        <img src="../img/perfil.png" alt="perfil">
                     </a>
                 </div>
                 <div id="sair">
@@ -81,8 +81,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -90,8 +90,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -99,8 +99,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -108,8 +108,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -117,8 +117,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -126,8 +126,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -135,8 +135,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -144,8 +144,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -153,8 +153,8 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -181,8 +181,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -193,8 +193,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -205,8 +205,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -217,8 +217,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -229,8 +229,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -241,8 +241,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -253,8 +253,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -265,8 +265,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -277,8 +277,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -289,8 +289,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -301,8 +301,8 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.html">
-                                        <img src="img/edit.png">
+                                    <a href="tela13.php">
+                                        <img src="../img/edit.png">
                                     </a>
                                 </td>
                             </tr>
@@ -311,13 +311,13 @@
                 </div>
 
                 <div id="novo-produto">
-                    <a href="tela12.html">NOVO PRODUTO</a>
+                    <a href="tela12.php">NOVO PRODUTO</a>
                 </div>
             </main>
         </div>
 
         <!-- Scripts -->
 
-        <script src="js/menu-lateral.js"></script>
+        <script src="../js/menu-lateral.js"></script>
     </body>
 </html>

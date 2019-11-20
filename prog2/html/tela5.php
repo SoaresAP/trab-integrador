@@ -6,16 +6,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilo1.css">
-        <link rel="stylesheet" href="css/tela5.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/estilo1.css">
+        <link rel="stylesheet" href="../css/tela5.css">
     </head>
 
     <body>
       <div class="grid-conteiner">
         <div class="cadastro">
             <div class="logo">
-                <img src="img/vitari.jpg">
+                <img src="../img/vitari.jpg">
             </div>
             <div class="textos">
                 <p>Usuario:

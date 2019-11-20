@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 7</title>
+        <title>Tela 6</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilo1.css">
-        <link rel="stylesheet" href="css/estilo0.css">
-        <link rel="stylesheet" href="css/estilo7.css">
-        <link rel="stylesheet" href="css/tela6.css">
+        <link rel="stylesheet" href="../css/reset.css">
+
+        <link rel="stylesheet" href="../css/estilo1.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo7.css">
+        <link rel="stylesheet" href="../css/tela6.css">
     </head>
 
     <body>
@@ -18,7 +19,7 @@
         <div class="grid-conteiner" id="tela">
             <header class="grid-conteiner">
                 <div id="categorias">
-                    <img src="img/menu.png" alt="opcoes">
+                    <img src="../img/menu.png" alt="opcoes">
 
                 </div>
                 <div class="barra" tabindex="0">
@@ -35,19 +36,19 @@
 
                 </div>
                 <div id="logo">
-                    <img src="img/vitari.jpg">
+                    <img src="../img/vitari.jpg">
                 </div>
                 <div id="perfil">
-                    <a href="#"><img src="img/default.png"></a>
+                    <a href="#"><img src="../img/default.png"></a>
                 </div>
                 <div id="sair">
-                    <a href="#"><img src="img/sair.png"></a>
+                    <a href="#"><img src="../img/sair.png"></a>
                 </div>
 
                 <div id="pesquisa">
                     <div id="divBusca">
                         <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-                        <img src="img/lupa.png" id="btnBusca" width="16" height="16" alt="Buscar"/>
+                        <img src="../img/lupa.png" id="btnBusca" width="16" height="16" alt="Buscar"/>
                     </div>
                 </div>
 
@@ -66,69 +67,84 @@
 
             <main class="grid-conteiner">
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Shampoo</p>
                     <p>R$ 60,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Máscara</p>
                     <p>R$ 30,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Shampoo</p>
                     <p>R$ 50,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
 
                 <div class="produto">
-                    <img src="img/perfume.png">
+                    <img src="../img/perfume.png">
                     <p>Perfume Ferrari masculino</p>
                     <p>R$ 80,00</p>
                 </div>
             </main>
         </div>
-        <script src="js/menu-lateral.js">
+
+        <script>
+
+            document.querySelector('#categorias > img').onclick = function(){
+                document.getElementsByClassName('barra')[0].style.display = 'grid';
+                document.getElementsByClassName('barra')[0].focus();
+
+            }
+
+            document.querySelector('.barra').onblur = function(){
+
+                document.getElementsByClassName('barra')[0].style.display = 'none';
+
+            }
+
 
         </script>
 
     </body>
+
 </html>

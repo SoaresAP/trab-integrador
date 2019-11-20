@@ -6,12 +6,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilo0.css">
-        <link rel="stylesheet" href="css/estilo1.css">
-        <link rel="stylesheet" href="css/estilo6.css">
-        <link rel="stylesheet" href="css/estilo7.css">
-        <link rel="stylesheet" href="css/tela1.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo1.css">
+        <link rel="stylesheet" href="../css/estilo6.css">
+        <link rel="stylesheet" href="../css/estilo7.css">
+        <link rel="stylesheet" href="../css/tela1.css">
     </head>
 
     <body>
@@ -19,11 +19,11 @@
         <div class="grid-conteiner" id="tela">
             <header class="grid-conteiner">
               <div id="categorias">
-                  <img src="img/menu.png" alt="opcoes">
+                  <img src="../img/menu.png" alt="opcoes">
 
               </div>
                 <div id="logo">
-                    <img src="img/vitari.jpg">
+                    <img src="../img/vitari.jpg">
                 </div>
                 <div class="barra" tabindex="0">
                     <nav>
@@ -40,18 +40,18 @@
                 </div>
 
                 <div id="cadastro">
-                    <a href="#"><img src="img/cadastro.png"></a>
+                    <a href="#"><img src="../img/cadastro.png"></a>
 
                 </div>
                 <div id="login">
 
-                    <a href="#"><img src="img/login.png"></a>
+                    <a href="#"><img src="../img/login.png"></a>
 
                 </div>
                 <div id="pesquisa">
                     <div id="divBusca">
                         <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
-                        <img src="img/lupa.png" id="btnBusca" width="16" height="16" alt="Buscar"/>
+                        <img src="../img/lupa.png" id="btnBusca" width="16" height="16" alt="Buscar"/>
                     </div>
                 </div>
                 <div id="barra-categorias">
@@ -74,7 +74,7 @@
                 <div class="descricao">DESCRICAO</div>
             </main>
         </div>
-        <script src="js/menu-lateral.js">
+        <script src="../js/menu-lateral.js">
 
         </script>
 

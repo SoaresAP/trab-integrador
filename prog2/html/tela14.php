@@ -6,16 +6,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="../css/reset.css">
 
-        <link rel="stylesheet" href="css/estilo0.css">
-        <link rel="stylesheet" href="css/estilo2.css">
-        <link rel="stylesheet" href="css/estilo4.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo2.css">
+        <link rel="stylesheet" href="../css/estilo4.css">
 
-        <link rel="stylesheet" href="css/tela14.css">
+        <link rel="stylesheet" href="../css/tela14.css">
 
-        <link rel="stylesheet" href="css/menu-lateral.css">
-        <link rel="stylesheet" href="css/menu-lateral-2.css">
+        <link rel="stylesheet" href="../css/menu-lateral.css">
+        <link rel="stylesheet" href="../css/menu-lateral-2.css">
     </head>
 
     <body>
@@ -25,33 +25,33 @@
             <header class="grid-conteiner">
                 <div class="barra">
                     <nav>
-                        <a href="tela14.html">
+                        <a href="tela14.php">
                             <div class="link">USUÁRIOS</div>
                         </a>
-                        <a href="tela10.html">
+                        <a href="tela10.php">
                             <div class="link">PRODUTOS</div>
                         </a>
                     </nav>
                 </div>
 
                 <div id="opcoes">
-                    <img src="img/menu.png" alt="opcoes">
+                    <img src="../img/menu.png" alt="opcoes">
                 </div>
                 <div id="usuarios">
-                    <a href="tela14.html">USUÁRIOS</a>
+                    <a href="tela14.php">USUÁRIOS</a>
                 </div>
                 <div id="produtos">
-                    <a href="tela10.html">PRODUTOS</a>
+                    <a href="tela10.php">PRODUTOS</a>
                 </div>
 
                 <div id="logo">
-                    <a href="tela1.html">
-                        <img src="img/vitari.jpg" alt="logo">
+                    <a href="tela1.php">
+                        <img src="../img/vitari.jpg" alt="logo">
                     </a>
                 </div>
                 <div id="perfil">
                     <a href="#">
-                        <img src="img/perfil.png" alt="perfil">
+                        <img src="../img/perfil.png" alt="perfil">
                     </a>
                 </div>
                 <div id="sair">
@@ -80,7 +80,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -89,7 +89,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -98,7 +98,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -107,7 +107,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -116,7 +116,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -125,7 +125,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -134,7 +134,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -143,7 +143,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -152,7 +152,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -161,7 +161,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -170,7 +170,7 @@
                                 <td>user@gmail.com</td>
                                 <td>
                                     <a href="#">
-                                        <img src="img/excluir.png">
+                                        <img src="../img/excluir.png">
                                     </a>
                                 </td>
                             </tr>
@@ -182,6 +182,6 @@
 
         <!-- Scripts -->
 
-        <script src="js/menu-lateral.js"></script>
+        <script src="../js/menu-lateral.js"></script>
     </body>
 </html>

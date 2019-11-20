@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 13</title>
+        <title>Tela 12</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="../css/reset.css">
 
-        <link rel="stylesheet" href="css/estilo0.css">
-        <link rel="stylesheet" href="css/estilo2.css">
-        <link rel="stylesheet" href="css/estilo4.css">
-        <link rel="stylesheet" href="css/estilo5.css">
-        <link rel="stylesheet" href="css/estilo8.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo2.css">
+        <link rel="stylesheet" href="../css/estilo4.css">
+        <link rel="stylesheet" href="../css/estilo5.css">
+        <link rel="stylesheet" href="../css/estilo8.css">
 
-        <link rel="stylesheet" href="css/tela13.css">
+        <link rel="stylesheet" href="../css/tela12.css">
 
-        <link rel="stylesheet" href="css/menu-lateral.css">
-        <link rel="stylesheet" href="css/menu-lateral-2.css">
+        <link rel="stylesheet" href="../css/menu-lateral.css">
+        <link rel="stylesheet" href="../css/menu-lateral-2.css">
     </head>
 
     <body>
@@ -27,33 +27,33 @@
             <header class="grid-conteiner">
                 <div class="barra">
                     <nav>
-                        <a href="tela14.html">
+                        <a href="tela14.php">
                             <div class="link">USUÁRIOS</div>
                         </a>
-                        <a href="tela10.html">
+                        <a href="tela10.php">
                             <div class="link">PRODUTOS</div>
                         </a>
                     </nav>
                 </div>
 
                 <div id="opcoes">
-                    <img src="img/menu.png" alt="opcoes">
+                    <img src="../img/menu.png" alt="opcoes">
                 </div>
                 <div id="usuarios">
-                    <a href="tela14.html">USUÁRIOS</a>
+                    <a href="tela14.php">USUÁRIOS</a>
                 </div>
                 <div id="produtos">
-                    <a href="tela10.html">PRODUTOS</a>
+                    <a href="tela10.php">PRODUTOS</a>
                 </div>
 
                 <div id="logo">
-                    <a href="tela1.html">
-                        <img src="img/vitari.jpg" alt="logo">
+                    <a href="tela1.php">
+                        <img src="../img/vitari.jpg" alt="logo">
                     </a>
                 </div>
                 <div id="perfil">
                     <a href="#">
-                        <img src="img/perfil.png" alt="perfil">
+                        <img src="../img/perfil.png" alt="perfil">
                     </a>
                 </div>
                 <div id="sair">
@@ -67,13 +67,13 @@
 
             <main class="grid-conteiner">
                 <div class="grid-conteiner" id="titulo">
-                    <h1>ALTERAÇÃO DE PRODUTO</h1>
+                    <h1>CADASTRO DE PRODUTO</h1>
                 </div>
 
                 <div class="grid-conteiner" id="formulario">
                     <form action="" method="post" id="form"></form>
 
-                    <input id="i-img" type="image" src="img/default.png" >
+                    <input id="i-img" type="image" src="../img/default.png" >
 
                     <label for="i-codigo" id="l-codigo">Código</label>
                     <input id="i-codigo" type="text" form="form">
@@ -101,14 +101,13 @@
                 </div>
 
                 <div class="grid-conteiner" id="envio">
-                    <input type="submit" id="i-excluir" value="EXCLUIR" form="form">
-                    <input type="submit" id="i-alterar" value="ALTERAR" form="form">
+                    <input id="i-cadastrar" type="submit" value="CADASTRAR" form="form">
                 </div>
             </main>
         </div>
 
         <!-- Scripts -->
 
-        <script src="js/menu-lateral.js"></script>
+        <script src="../js/menu-lateral.js"></script>
     </body>
 </html>

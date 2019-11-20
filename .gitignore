@@ -2,10 +2,10 @@
 
 *.~lock*
 
-# Swap files
+# Arquivos de swap
 
 *.swp
 
-# brModelo stuff
+# Arquivos do brModelo
 
 *.chc

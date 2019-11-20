@@ -10,8 +10,6 @@ CREATE USER 'admvitari'@'localhost' IDENTIFIED BY '12345';
 
 GRANT ALL PRIVILEGES ON * . * TO 'admvitari'@'localhost';
 
--------------------------------------------------
-
 CREATE TABLE usuario (
     login VARCHAR(10) PRIMARY KEY,
     senha VARCHAR(20) NOT NULL,
@@ -28,8 +26,18 @@ CREATE TABLE admin (
     UNIQUE(email)
 );
 
+CREATE TABLE tipo (
+    cod INT AUTO_INCREMENT PRIMARY KEY,
+    descr TEXT NOT NULL
+);
+
+CREATE TABLE categoria (
+    cod INT AUTO_INCREMENT PRIMARY KEY,
+    descr TEXT NOT NULL
+);
+
 CREATE TABLE produto (
-    cod VARCHAR(20) AUTO_INCREMENT PRIMARY KEY,
+    cod INT PRIMARY KEY,
     nome VARCHAR(30) NOT NULL,
     ctipo INT NOT NULL,
     ccat INT NOT NULL,
@@ -41,14 +49,4 @@ CREATE TABLE produto (
 
     FOREIGN KEY (ctipo) REFERENCES tipo(cod),
     FOREIGN KEY (ccat) REFERENCES categoria(cod)
-);
-
-CREATE TABLE tipo (
-    cod INT AUTO_INCREMENT PRIMARY KEY,
-    descr TEXT NOT NULL
-);
-
-CREATE TABLE categoria (
-    cod INT AUTO_INCREMENT PRIMARY KEY,
-    descr TEXT NOT NULL
 );

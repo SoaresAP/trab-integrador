@@ -28,12 +28,16 @@ CREATE TABLE admin (
 
 CREATE TABLE tipo (
     cod INT AUTO_INCREMENT PRIMARY KEY,
-    descr TEXT NOT NULL
+    descr TEXT NOT NULL,
+
+    UNIQUE(descr)
 );
 
 CREATE TABLE categoria (
     cod INT AUTO_INCREMENT PRIMARY KEY,
-    descr TEXT NOT NULL
+    descr TEXT NOT NULL,
+
+    UNIQUE(descr)
 );
 
 CREATE TABLE produto (

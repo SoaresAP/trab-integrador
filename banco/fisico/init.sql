@@ -6,9 +6,9 @@ USE vitari;
 
 DROP USER IF EXISTS 'admvitari'@'localhost';
 
-CREATE USER 'admvitari'@'localhost' IDENTIFIED BY '12345';
+CREATE USER 'adm'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON * . * TO 'admvitari'@'localhost';
+GRANT ALL PRIVILEGES ON * . * TO 'adm'@'localhost';
 
 CREATE TABLE usuario (
     login VARCHAR(10) PRIMARY KEY,

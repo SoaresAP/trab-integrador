@@ -1,6 +1,6 @@
 <?php
 
-include "BD.php";
+include_once "BD.php";
 
 class Categoria {
     private $conexao;

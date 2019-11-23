@@ -24,7 +24,7 @@ class BD {
         return $arrayResultados;
     }
 
-    function query($sql) { // outras queries
+    function query($sql) {
         return $this->conexao->query($sql);
     }
 

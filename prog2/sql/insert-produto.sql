@@ -1,13 +1,3 @@
-INSERT INTO tipo VALUES
-(NULL, 'Shampoo'),
-(NULL, 'Perfume'),
-(NULL, 'Desodorante');
-
-INSERT INTO categoria VALUES
-(NULL, 'Higiene'),
-(NULL, 'Perfume'),
-(NULL, 'Kits');
-
 INSERT INTO produto
 (cod, nome, ctipo, ccat, valor, dtfab, dtval, descr, img)
 VALUES

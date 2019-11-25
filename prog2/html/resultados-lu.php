@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 1</title>
+        <title>Vitari - Cosméticos e Perfumaria</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/estilo0.css">
         <link rel="stylesheet" href="../css/estilo1.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
         <link rel="stylesheet" href="../css/estilo7.css">
-        <link rel="stylesheet" href="../css/tela1.css">
-
+        <link rel="stylesheet" href="../css/principal-lu.css">
     </head>
 
     <body>
 
         <div class="grid-conteiner" id="tela">
-
             <!--HEAD-->
-            <?php include "../includes/head1.php"; ?>
+            <?php include "../includes/head2.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="produto">
@@ -83,12 +81,9 @@
                 </div>
             </main>
         </div>
-
-
         <script src="../js/menu-lateral.js">
 
         </script>
 
     </body>
-
 </html>

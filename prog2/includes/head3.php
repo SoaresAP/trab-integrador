@@ -2,10 +2,10 @@
 <header class="grid-conteiner">
     <div class="barra">
         <nav>
-            <a href="tela14.php">
+            <a href="gerenciamento-u-la.php">
                 <div class="link">USUÁRIOS</div>
             </a>
-            <a href="tela10.php">
+            <a href="pesquisa-la.php">
                 <div class="link">PRODUTOS</div>
             </a>
         </nav>
@@ -15,14 +15,14 @@
         <img src="../img/menu.png" alt="opcoes">
     </div>
     <div id="usuarios">
-        <a href="tela14.php">USUÁRIOS</a>
+        <a href="gerenciamento-u-la.php">USUÁRIOS</a>
     </div>
     <div id="produtos">
-        <a href="tela10.php">PRODUTOS</a>
+        <a href="pesquisa-la.php">PRODUTOS</a>
     </div>
 
     <div id="logo">
-        <a href="tela1.php">
+        <a href="principal-sl.php">
             <img src="../img/vitari.jpg" alt="logo">
         </a>
     </div>

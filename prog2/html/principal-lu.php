@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 2</title>
+        <title>Vitari - Cosméticos e Perfumaria</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <link rel="stylesheet" href="../css/reset.css">
-        <link rel="stylesheet" href="../css/estilo0.css">
-        <link rel="stylesheet" href="../css/estilo1.css">
-        <link rel="stylesheet" href="../css/estilo7.css">
-        <link rel="stylesheet" href="../css/tela1.css">
 
+        <link rel="stylesheet" href="../css/estilo1.css">
+        <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo7.css">
+        <link rel="stylesheet" href="../css/principal-lu.css">
     </head>
 
     <body>
 
         <div class="grid-conteiner" id="tela">
-
             <!--HEAD-->
-            <?php include "../includes/head1.php"; ?>
+            <?php include "../includes/head2.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="produto">
@@ -84,9 +83,23 @@
             </main>
         </div>
 
-        <script src="../js/menu-lateral.js">
+        <script>
+
+            document.querySelector('#categorias > img').onclick = function(){
+                document.getElementsByClassName('barra')[0].style.display = 'grid';
+                document.getElementsByClassName('barra')[0].focus();
+
+            }
+
+            document.querySelector('.barra').onblur = function(){
+
+                document.getElementsByClassName('barra')[0].style.display = 'none';
+
+            }
+
 
         </script>
 
     </body>
+
 </html>

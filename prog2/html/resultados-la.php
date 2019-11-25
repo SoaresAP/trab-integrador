@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 11</title>
+        <title>Vitari - Cosméticos e Perfumaria</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../css/estilo3.css">
         <link rel="stylesheet" href="../css/estilo8.css">
 
-        <link rel="stylesheet" href="../css/tela11.css">
+        <link rel="stylesheet" href="../css/resultados-la.css">
 
         <link rel="stylesheet" href="../css/menu-lateral.css">
         <link rel="stylesheet" href="../css/menu-lateral-2.css">
@@ -43,7 +43,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -52,7 +52,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -61,7 +61,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -70,7 +70,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -79,7 +79,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -88,7 +88,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -97,7 +97,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -106,7 +106,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -115,7 +115,7 @@
                                 <td>123889</td>
                                 <td>Shampoo Palmolive</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -143,7 +143,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -155,7 +155,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -167,7 +167,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -179,7 +179,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -191,7 +191,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -203,7 +203,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -215,7 +215,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -227,7 +227,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -239,7 +239,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -251,7 +251,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -263,7 +263,7 @@
                                 <td>R$ 40,00</td>
                                 <td>12/06/2020</td>
                                 <td>
-                                    <a href="tela13.php">
+                                    <a href="alteracao-p-la.php">
                                         <img src="../img/edit.png">
                                     </a>
                                 </td>
@@ -273,7 +273,7 @@
                 </div>
 
                 <div id="novo-produto">
-                    <a href="tela12.php">NOVO PRODUTO</a>
+                    <a href="cadastro-p-la.php">NOVO PRODUTO</a>
                 </div>
             </main>
         </div>

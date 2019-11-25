@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 9</title>
+        <title>Vitari - Cosméticos e Perfumaria</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../css/estilo2.css">
         <link rel="stylesheet" href="../css/estilo4.css">
 
-        <link rel="stylesheet" href="../css/tela9.css">
+        <link rel="stylesheet" href="../css/principal-la.css">
 
         <link rel="stylesheet" href="../css/menu-lateral.css">
         <link rel="stylesheet" href="../css/menu-lateral-2.css">

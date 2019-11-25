@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
-        <title>Tela 5</title>
+        <title>Vitari - Cosméticos e Perfumaria</title>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <link rel="stylesheet" href="../css/reset.css">
         <link rel="stylesheet" href="../css/estilo1.css">
-        <link rel="stylesheet" href="../css/tela5.css">
+        <link rel="stylesheet" href="../css/cadastro-u.css">
     </head>
 
     <body>

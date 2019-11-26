@@ -18,7 +18,7 @@
                 <img src="../img/vitari.jpg">
             </div>
             <div class="textos">
-                <p>Usuario:
+                <p>Login:
                 <p>Email:
                 <p>Senha:
                 <p>Confirmar senha:

@@ -27,7 +27,7 @@
 
     <div id="pesquisa">
         <div id="divBusca">
-            <input type="text" id="txtBusca" placeholder="Pesquisar..."/>
+            <input type="text" id="txtBusca" name="busca" placeholder="Pesquisar..."/>
             <img src="../img/lupa.png" id="btnBusca" width="16" height="16" alt="Buscar"/>
         </div>
     </div>

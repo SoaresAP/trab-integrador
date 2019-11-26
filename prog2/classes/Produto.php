@@ -39,7 +39,6 @@ class Produto {
         $res = $this->bd->query($sql);
         return $res;
     }
-
 }
 
 ?>

@@ -37,6 +37,6 @@
 
     <form action="resultados-la.php" method="get" id="form"></form>
     <div id="pesquisa">
-        <input type="text" name="busca" placeholder="Pesquisar produtos..." form="form"/>
+        <input type="text" name="busca" placeholder="Pesquisar produtos..." form="form" autofocus/>
     </div>
 </header>

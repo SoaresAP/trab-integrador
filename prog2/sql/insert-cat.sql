@@ -1,8 +1,8 @@
 INSERT INTO categoria VALUES
-(NULL, 'Unhas'),
-(NULL, 'Maquiagem'),
-(NULL, 'Cabelos'),
-(NULL, 'Kits'),
-(NULL, 'Higiene'),
-(NULL, 'Pele'),
-(NULL, 'Perfume');
+(0, 'Unhas'),
+(1, 'Maquiagem'),
+(2, 'Cabelos'),
+(3, 'Kits'),
+(4, 'Higiene'),
+(5, 'Pele'),
+(6, 'Perfume');

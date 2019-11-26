@@ -4,11 +4,13 @@ CREATE DATABASE vitari DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 USE vitari;
 
-DROP USER IF EXISTS 'admvitari'@'localhost';
+DROP USER IF EXISTS 'adm'@'localhost';
 
 CREATE USER 'adm'@'localhost' IDENTIFIED BY '123';
 
 GRANT ALL PRIVILEGES ON * . * TO 'adm'@'localhost';
+
+DROP TABLE IF EXISTS usuario;
 
 CREATE TABLE usuario (
     login VARCHAR(10) PRIMARY KEY,
@@ -18,6 +20,8 @@ CREATE TABLE usuario (
     UNIQUE(email)
 );
 
+DROP TABLE IF EXISTS admin;
+
 CREATE TABLE admin (
     login VARCHAR(10) PRIMARY KEY,
     senha VARCHAR(20) NOT NULL,
@@ -26,19 +30,25 @@ CREATE TABLE admin (
     UNIQUE(email)
 );
 
+DROP TABLE IF EXISTS ;
+
 CREATE TABLE tipo (
-    cod INT AUTO_INCREMENT PRIMARY KEY,
-    descr TEXT NOT NULL,
+    cod INT PRIMARY KEY,
+    descr VARCHAR(50) NOT NULL,
 
     UNIQUE(descr)
 );
+
+DROP TABLE IF EXISTS categoria;
 
 CREATE TABLE categoria (
-    cod INT AUTO_INCREMENT PRIMARY KEY,
-    descr TEXT NOT NULL,
+    cod INT PRIMARY KEY,
+    descr VARCHAR(50) NOT NULL,
 
     UNIQUE(descr)
 );
+
+DROP TABLE IF EXISTS produto;
 
 CREATE TABLE produto (
     cod INT PRIMARY KEY,

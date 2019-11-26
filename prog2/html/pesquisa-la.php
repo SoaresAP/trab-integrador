@@ -39,6 +39,7 @@
 
         <!-- Scripts -->
 
+        <script src="../js/submit.js"></script>
         <script src="../js/menu-lateral.js"></script>
     </body>
 </html>

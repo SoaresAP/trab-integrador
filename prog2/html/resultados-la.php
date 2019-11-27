@@ -53,7 +53,7 @@
 
                                 foreach ($produtos as $p) {
                                     $has = strpos(strtolower($p['nome']), strtolower($busca));
-                                    
+
                                     if (empty($busca) || $has !== false) {
                                         printf("<tr>
                                                     <td>%s</td>
@@ -67,18 +67,7 @@
                                                 $p['cod'], $p['nome']);
                                     }
                                 }
-
                             ?>
-                            <!-- <tr>
-                                <td>123889</td>
-                                <td>Shampoo Palmolive</td>
-                                <td>
-                                    <a href="alteracao-p-la.php">
-                                        <img src="../img/edit.png">
-                                    </a>
-                                </td>
-                            </tr> -->
-
                         </tbody>
                     </table>
 
@@ -95,19 +84,41 @@
                         </thead>
 
                         <tbody>
-                            <tr>
-                                <td>9974328</td>
-                                <td>Shampoo Palmolive</td>
-                                <td>Higiene</td>
-                                <td>R$ 40,00</td>
-                                <td>12/06/2020</td>
-                                <td>
-                                    <a href="alteracao-p-la.php">
-                                        <img src="../img/edit.png">
-                                    </a>
-                                </td>
-                            </tr>
+                            <?php
+                                // error_reporting(E_ALL ^ E_WARNING);
 
+                                $bd = new BD();
+                                $sql = "SELECT p.cod AS cod, nome, c.descr AS cat, valor, dtval
+                                        FROM produto p JOIN categoria c ON p.ccat = c.cod";
+                                $produtos = $bd->select($sql);
+
+                                if (isset($_GET['busca']))
+                                    $busca = $_GET['busca'];
+
+                                foreach ($produtos as $p) {
+                                    $dtf = substr($p['dtval'], 8, 2) . "/"
+                                           . substr($p['dtval'], 5, 2) . "/"
+                                           . substr($p['dtval'], 0, 4);
+
+                                    $has = strpos(strtolower($p['nome']), strtolower($busca));
+
+                                    if (empty($busca) || $has !== false) {
+                                        printf("<tr>
+                                                    <td>%s</td>
+                                                    <td>%s</td>
+                                                    <td>%s</td>
+                                                    <td>R$ %.2f</td>
+                                                    <td>%s</td>
+                                                    <td>
+                                                        <a href='alteracao-p-la.php'>
+                                                            <img src='../img/edit.png'>
+                                                        </a>
+                                                    </td>
+                                                </tr>",
+                                                $p['cod'], $p['nome'], $p['cat'], (float) $p['valor'], $dtf);
+                                    }
+                                }
+                            ?>
                         </tbody>
                     </table>
                 </div>

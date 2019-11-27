@@ -127,7 +127,7 @@
             </main>
         </div>
 
-        <!-- Scripts -->
+        <!-- scripts -->
 
         <script src="../js/submit-busca.js"></script>
         <script src="../js/menu-lateral.js"></script>

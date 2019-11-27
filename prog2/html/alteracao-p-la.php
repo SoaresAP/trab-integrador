@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="grid-conteiner" id="formulario">
-                    <form action="temp.php" method="post" id="form"></form>
+                    <form action="" method="post" id="form"></form>
 
                     <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
@@ -74,7 +74,7 @@
             </main>
         </div>
 
-        <!-- Scripts -->
+        <!-- scripts -->
 
         <script src="../js/validacao-produto.js"></script>
         <script src="../js/menu-lateral.js"></script>

@@ -58,23 +58,13 @@
                                             $u['login'], $u['email']);
                                 }
                             ?>
-
-                            <!-- <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr> -->
                         </tbody>
                     </table>
                 </div>
             </main>
         </div>
 
-        <!-- Scripts -->
+        <!-- scripts -->
 
         <script src="../js/menu-lateral.js"></script>
     </body>

@@ -22,15 +22,15 @@ h1, #envio * {
     font-size: calc(5vw);
 }
 
-input[type="text"], label, select {
+input[type="text"], input[type="date"], label, select {
     margin: 2% 0;
 }
 
-input[type="text"], textarea, input[type="image"], select {
+input[type="text"], input[type="date"], textarea, input[type="image"], select {
     border: 2px solid black;
 }
 
-input[type="text"], textarea, select {
+input[type="text"], input[type="date"], textarea, select {
     font-size: calc(4vw);
 
     padding: 0 3vw;
@@ -138,7 +138,7 @@ main {
         height: 150px;
     }
 
-    input[type="text"], textarea, label, select {
+    input[type="text"], input[type="date"], textarea, label, select {
         font-size: 1em;
     }
 

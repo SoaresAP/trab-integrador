@@ -59,10 +59,10 @@
                     </select>
 
                     <label for="i-fabricacao" id="l-fabricacao">Fabricação</label>
-                    <input name="fabricacao" id="i-fabricacao" type="text" form="form">
+                    <input name="fabricacao" id="i-fabricacao" type="date" form="form">
 
                     <label for="i-validade" id="l-validade">Validade</label>
-                    <input name="validade" id="i-validade" type="text" form="form">
+                    <input name="validade" id="i-validade" type="date" form="form">
 
                     <label for="i-descricao" id="l-descricao">Descrição</label>
                     <textarea name="descricao" id="i-descricao" rows="2" form="form"></textarea>

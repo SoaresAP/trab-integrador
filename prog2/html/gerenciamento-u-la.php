@@ -37,7 +37,29 @@
                         </thead>
 
                         <tbody>
-                            <tr>
+                            <?php
+                                include "../classes/BD.php";
+
+                                $bd = new BD();
+                                $sql = "SELECT login, email
+                                        FROM usuario";
+                                $usuarios = $bd->select($sql);
+
+                                foreach ($usuarios as $u) {
+                                    printf("<tr>
+                                                <td>%s</td>
+                                                <td>%s</td>
+                                                <td>
+                                                    <a href='#'>
+                                                        <img src='../img/excluir.png'>
+                                                    </a>
+                                                </td>
+                                            </tr>",
+                                            $u['login'], $u['email']);
+                                }
+                            ?>
+
+                            <!-- <tr>
                                 <td>user</td>
                                 <td>user@gmail.com</td>
                                 <td>
@@ -45,97 +67,7 @@
                                         <img src="../img/excluir.png">
                                     </a>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>user</td>
-                                <td>user@gmail.com</td>
-                                <td>
-                                    <a href="#">
-                                        <img src="../img/excluir.png">
-                                    </a>
-                                </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>

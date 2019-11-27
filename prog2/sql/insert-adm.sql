@@ -1,3 +1,3 @@
 INSERT INTO admin VALUES
-    ('leozin', '12345', 'leozin@gmail.com'),
-    ('paulo', '54321', 'paulo@gmail.com');
+('leonardo', 'leonardo', 'leonardo@gmail.com'),
+('paulo', 'paulo', 'paulo@gmail.com');

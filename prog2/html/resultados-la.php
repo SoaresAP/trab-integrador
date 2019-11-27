@@ -85,8 +85,6 @@
 
                         <tbody>
                             <?php
-                                // error_reporting(E_ALL ^ E_WARNING);
-
                                 $bd = new BD();
                                 $sql = "SELECT p.cod AS cod, nome, c.descr AS cat, valor, dtval
                                         FROM produto p JOIN categoria c ON p.ccat = c.cod";

@@ -30,7 +30,7 @@ CREATE TABLE admin (
     UNIQUE(email)
 );
 
-DROP TABLE IF EXISTS ;
+DROP TABLE IF EXISTS tipo;
 
 CREATE TABLE tipo (
     cod INT PRIMARY KEY,

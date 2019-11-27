@@ -46,11 +46,17 @@
                     <label for="i-valor" id="l-valor">Valor</label>
                     <input id="i-valor" type="text" form="form">
 
-                    <label for="i-tipo" id="l-tipo">Tipo</label>
-                    <input id="i-tipo" type="text" form="form">
+                    <label for="s-tipo" id="l-tipo">Tipo</label>
+                    <select id="s-tipo" form="form">
+                        <option value="Selecione..." selected>Selecione...</option>
+                        <option value="Higiene">Higiene</option>
+                    </select>
 
-                    <label for="i-categoria" id="l-categoria">Categorias</label>
-                    <input id="i-categoria" type="text" form="form">
+                    <label for="s-categoria" id="l-categoria">Categoria</label>
+                    <select id="s-categoria" form="form">
+                        <option value="Selecione..." selected>Selecione...</option>
+                        <option value="Higiene">Higiene</option>
+                    </select>
 
                     <label for="i-fabricacao" id="l-fabricacao">Fabricação</label>
                     <input id="i-fabricacao" type="text" form="form">

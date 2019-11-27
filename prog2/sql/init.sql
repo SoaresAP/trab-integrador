@@ -10,6 +10,8 @@ CREATE USER 'adm'@'localhost' IDENTIFIED BY '123';
 
 GRANT ALL PRIVILEGES ON * . * TO 'adm'@'localhost';
 
+SET GLOBAL lc_time_names=en_US;
+
 DROP TABLE IF EXISTS usuario;
 
 CREATE TABLE usuario (

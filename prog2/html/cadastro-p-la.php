@@ -1,6 +1,29 @@
 <?php
     include "../classes/BD.php";
     $bd = new BD();
+
+    include "../classes/Produto.php";
+    $prod = new Produto();
+
+    if (!empty($_POST)) {
+        $tipo = $_POST['tipo'];
+        $tipo = $bd->select("SELECT cod AS tipo
+                            FROM tipo
+                            WHERE descr = " . $tipo);
+
+        $cat = $_POST['categoria'];
+        $cat = $bd->select("SELECT cod AS cat
+                            FROM categoria
+                            WHERE descr = " . $cat);
+
+        $dados = array('cod' => $_POST['codigo'], 'nome' => $_POST['nome'],
+                       'ctipo' => $tipo, 'ccat' => $cat,
+                       'valor' => $_POST['valor'], 'dtfab' => $_POST['fabricacao'],
+                       'dtval' => $_POST['validade'], 'descr' => $_POST['descricao'],
+                       'img' => "NULL");
+
+        $res = $prod->incluir($dados);
+    }
 ?>
 
 <!DOCTYPE html>

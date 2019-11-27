@@ -24,8 +24,7 @@
 
         <div class="grid-conteiner" id="tela">
 
-          <!--HEAD-->
-          <?php include "../includes/head3.php"; ?>
+            <?php include "../includes/head4.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="grid-conteiner" id="titulo">
@@ -33,9 +32,9 @@
                 </div>
 
                 <div class="grid-conteiner" id="formulario">
-                    <form action="" method="post" id="form"></form>
+                    <form action="temp.php" method="post" id="form"></form>
 
-                    <input name="img" id="i-img" type="image" src="../img/default.png">
+                    <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
                     <label for="i-codigo" id="l-codigo">Código</label>
                     <input name="codigo" id="i-codigo" type="text" form="form">

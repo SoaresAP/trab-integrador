@@ -7,6 +7,11 @@
 }
 
 
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
 .grid-conteiner {
     display: grid;
 }

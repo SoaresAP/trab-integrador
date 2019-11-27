@@ -24,20 +24,15 @@
 
         <div class="grid-conteiner" id="tela">
 
-          <!--HEAD-->
-          <?php include "../includes/head3.php"; ?>
+            <?php include "../includes/head4.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="grid-conteiner" id="titulo">
                     <h1>ALTERAÇÃO DE PRODUTO</h1>
                 </div>
 
-                <div class="grid-conteiner" id="titulo">
-                    <h1>CADASTRO DE PRODUTO</h1>
-                </div>
-
                 <div class="grid-conteiner" id="formulario">
-                    <form action="" method="post" id="form"></form>
+                    <form action="temp.php" method="post" id="form"></form>
 
                     <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
@@ -73,13 +68,15 @@
                 </div>
 
                 <div class="grid-conteiner" id="envio">
-                    <input name="cadastrar" id="i-cadastrar" type="submit" value="CADASTRAR" form="form">
+                    <input name="excluir" type="submit" id="i-excluir" value="EXCLUIR" form="form">
+                    <input name="alterar" type="submit" id="i-alterar" value="ALTERAR" form="form">
                 </div>
             </main>
         </div>
 
         <!-- Scripts -->
 
+        <script src="../js/validacao-produto.js"></script>
         <script src="../js/menu-lateral.js"></script>
     </body>
 </html>

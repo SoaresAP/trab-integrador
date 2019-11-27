@@ -7,7 +7,8 @@ function submit() {
     event.preventDefault();
 
     val = busca.value.trim(); // retira espacos do comeco e fim
-    alfaNumerico = val.match("^([0-9A-Za-z])+$");    // alfanumericos
+    patt = /^([\da-z])+( [\da-z]+)*$/i;
+    alfaNumerico = patt.test(val);    // alfanumericos
 
     if (val == "" || alfaNumerico) {
         busca.value = val;

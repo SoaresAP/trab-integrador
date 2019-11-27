@@ -10,8 +10,9 @@ class Produto {
     }
 
     function incluir($dados) {
+        var_dump($dados);
         $sql = sprintf("INSERT INTO produto VALUES
-                        (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
+                        (%s, '%s', %s, %s, %.2f, '%s', '%s', '%s', '%s')",
                         $dados['cod'], $dados['nome'], $dados['ctipo'],
                         $dados['ccat'], $dados['valor'], $dados['dtfab'],
                         $dados['dtval'], $dados['descr'], $dados['img']);
@@ -22,11 +23,11 @@ class Produto {
 
     function alterar($dados) {
         $sql = sprintf("UPDATE produto
-                        SET cod = %s, nome = %s,
+                        SET cod = %s, nome = '%s',
                             ctipo = %s, ccat = %s,
-                            valor = %s, dtfab = %s,
-                            dtval = %s, descr = %s,
-                            img = %s
+                            valor = %.2f, dtfab = '%s',
+                            dtval = '%s', descr = '%s',
+                            img = '%s'
                         WHERE id = %s",
                         $dados['cod'], $dados['nome'], $dados['ctipo'],
                         $dados['ccat'], $dados['valor'], $dados['dtfab'],

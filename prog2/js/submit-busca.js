@@ -1,4 +1,4 @@
-form = document.querySelector("form[id='form']");
+form = document.querySelector("form");
 form.addEventListener("submit", submit);
 
 busca = document.querySelector("input[name='busca']");

@@ -32,45 +32,48 @@
                     <h1>ALTERAÇÃO DE PRODUTO</h1>
                 </div>
 
+                <div class="grid-conteiner" id="titulo">
+                    <h1>CADASTRO DE PRODUTO</h1>
+                </div>
+
                 <div class="grid-conteiner" id="formulario">
                     <form action="" method="post" id="form"></form>
 
-                    <input id="i-img" type="image" src="../img/default.png" >
+                    <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
                     <label for="i-codigo" id="l-codigo">Código</label>
-                    <input id="i-codigo" type="text" form="form">
+                    <input name="codigo" id="i-codigo" type="text" form="form">
 
                     <label for="i-nome" id="l-nome">Nome</label>
-                    <input id="i-nome" type="text" form="form">
+                    <input name="nome" id="i-nome" type="text" form="form">
 
                     <label for="i-valor" id="l-valor">Valor</label>
-                    <input id="i-valor" type="text" form="form">
+                    <input name="valor" id="i-valor" type="text" form="form">
 
                     <label for="s-tipo" id="l-tipo">Tipo</label>
-                    <select id="s-tipo" form="form">
+                    <select name="tipo" id="s-tipo" form="form">
                         <option value="Selecione..." selected>Selecione...</option>
                         <option value="Higiene">Higiene</option>
                     </select>
 
                     <label for="s-categoria" id="l-categoria">Categoria</label>
-                    <select id="s-categoria" form="form">
+                    <select name="categoria" id="s-categoria" form="form">
                         <option value="Selecione..." selected>Selecione...</option>
                         <option value="Higiene">Higiene</option>
                     </select>
 
                     <label for="i-fabricacao" id="l-fabricacao">Fabricação</label>
-                    <input id="i-fabricacao" type="text" form="form">
+                    <input name="fabricacao" id="i-fabricacao" type="text" form="form">
 
                     <label for="i-validade" id="l-validade">Validade</label>
-                    <input id="i-validade" type="text" form="form">
+                    <input name="validade" id="i-validade" type="text" form="form">
 
                     <label for="i-descricao" id="l-descricao">Descrição</label>
-                    <textarea id="i-descricao" rows="2" form="form"></textarea>
+                    <textarea name="descricao" id="i-descricao" rows="2" form="form"></textarea>
                 </div>
 
                 <div class="grid-conteiner" id="envio">
-                    <input type="submit" id="i-excluir" value="EXCLUIR" form="form">
-                    <input type="submit" id="i-alterar" value="ALTERAR" form="form">
+                    <input name="cadastrar" id="i-cadastrar" type="submit" value="CADASTRAR" form="form">
                 </div>
             </main>
         </div>

@@ -1,5 +1,25 @@
+<?php
+  if (isset($_POST['cadastrar'])){
+
+    $dados = array();
+        $dados['login'] = $_POST['usuario'];
+        $dados['senha'] = $_POST['senha'];
+        $dados['email'] = $_POST['email'];
+
+        $usuario = new Usuario();
+        $resultado = $usuario->cadastrar($dados);
+        if ($resultado) {
+            echo "Usuário cadastrado com sucesso!";
+        }
+        else {
+          echo "ERRO";
+        }
+  }
+
+ ?>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
+
     <head>
         <title>Vitari - Cosméticos e Perfumaria</title>
 
@@ -33,9 +53,12 @@
                 <input type="password" name="confirmasenha" id="confirmasenha"><br>
 
             </div>
-            <button type="button" name="entrar">Entrar</button>
+
+            <a href="#" name="cadastrar">CADASTRAR</a>
 
         </div>
+
       </div>
+
     </body>
 </html>

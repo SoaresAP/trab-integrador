@@ -27,4 +27,5 @@ class Usuario {
         $res = $this->bd->query($sql);
         return $res;
     }
+}
 ?>

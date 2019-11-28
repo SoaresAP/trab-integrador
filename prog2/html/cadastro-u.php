@@ -1,22 +1,3 @@
-<?php
-  if (isset($_POST['cadastrar'])){
-
-    $dados = array();
-        $dados['login'] = $_POST['usuario'];
-        $dados['senha'] = $_POST['senha'];
-        $dados['email'] = $_POST['email'];
-
-        $usuario = new Usuario();
-        $resultado = $usuario->cadastrar($dados);
-        if ($resultado) {
-            echo "Usuário cadastrado com sucesso!";
-        }
-        else {
-          echo "ERRO";
-        }
-  }
-
- ?>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
@@ -32,6 +13,8 @@
     </head>
 
     <body>
+
+
       <div class="grid-conteiner">
         <div class="cadastro">
             <div class="logo">
@@ -47,14 +30,16 @@
 
             <div class="entrada">
 
-                <input type="text" name="usuario" id="usuario" autofocus><br>
-                <input type="text" name="email" id="email"><br>
-                <input type="password" name="senha" id="senha"><br>
-                <input type="password" name="confirmasenha" id="confirmasenha"><br>
+                <form class="" action="temp.php" method="post" id="entrada"></form>
+
+                <input type="text" name="usuario" id="usuario" autofocus form="entrada"><br>
+                <input type="text" name="email" id="email" form="entrada"><br>
+                <input type="password" name="senha" id="senha" form="entrada"><br>
+                <input type="password" name="confirmasenha" id="confirmasenha" form="entrada"><br>
 
             </div>
 
-            <a href="#" name="cadastrar">CADASTRAR</a>
+            <input form="entrada" type="submit" name="cadastrar" value="CADASTRAR">
 
         </div>
 

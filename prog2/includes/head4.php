@@ -1,6 +1,6 @@
 <!-- telas 12 e 13 -->
 
-<?php include "comeco-header.php"; ?>
+<?php include_once "comeco-header.php"; ?>
 
     <div id="pesquisa">
         <input type="text" name="busca" placeholder="Pesquisar produtos..." autofocus/>

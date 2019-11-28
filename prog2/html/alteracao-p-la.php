@@ -24,7 +24,7 @@
 
         <div class="grid-conteiner" id="tela">
 
-            <?php include "../includes/head4.php"; ?>
+            <?php include_once "../includes/head4.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="grid-conteiner" id="titulo">

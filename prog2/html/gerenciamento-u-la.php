@@ -23,7 +23,7 @@
         <div class="grid-conteiner" id="tela">
 
           <!--HEAD-->
-          <?php include "../includes/head3.php"; ?>
+          <?php include_once "../includes/head3.php"; ?>
 
             <main class="grid-conteiner">
                 <div id="tabela">
@@ -38,7 +38,7 @@
 
                         <tbody>
                             <?php
-                                include "../classes/BD.php";
+                                include_once "../classes/BD.php";
 
                                 $bd = new BD();
                                 $sql = "SELECT login, email

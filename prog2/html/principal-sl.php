@@ -19,7 +19,7 @@
         <div class="grid-conteiner" id="tela">
 
             <!--HEAD-->
-            <?php include "../includes/head1.php"; ?>
+            <?php include_once "../includes/head1.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="produto">

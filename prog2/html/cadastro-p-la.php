@@ -1,6 +1,27 @@
 <?php
-    include "../classes/BD.php";
+    include_once "../classes/BD.php";
     $bd = new BD();
+
+    include_once "../classes/Produto.php";
+    $prod = new Produto();
+
+    if (!empty($_POST)) {
+        $tipo = $bd->select("SELECT cod AS tipo
+                             FROM tipo
+                             WHERE descr = '" . $_POST['tipo'] . "'")[0]['tipo'];
+
+        $cat = $bd->select("SELECT cod AS cat
+                            FROM categoria
+                            WHERE descr = '" . $_POST['categoria'] . "'")[0]['cat'];
+
+        $dados = array('cod' => $_POST['codigo'], 'nome' => $_POST['nome'],
+                       'ctipo' => $tipo, 'ccat' => $cat,
+                       'valor' => $_POST['valor'], 'dtfab' => $_POST['fabricacao'],
+                       'dtval' => $_POST['validade'], 'descr' => $_POST['descricao'],
+                       'img' => "NULL");
+
+        $res = $prod->incluir($dados);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +50,7 @@
 
         <div class="grid-conteiner" id="tela">
 
-            <?php include "../includes/head4.php"; ?>
+            <?php include_once "../includes/head4.php"; ?>
 
             <main class="grid-conteiner">
                 <div class="grid-conteiner" id="titulo">
@@ -37,7 +58,7 @@
                 </div>
 
                 <div class="grid-conteiner" id="formulario">
-                    <form action="temp.php" method="post" id="form"></form>
+                    <form action="" method="post" id="form"></form>
 
                     <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 

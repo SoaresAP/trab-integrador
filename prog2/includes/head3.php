@@ -1,6 +1,6 @@
 <!-- telas 9, 10 e 11 -->
 
-<?php include "comeco-header.php"; ?>
+<?php include_once "comeco-header.php"; ?>
 
     <form action="resultados-la.php" method="get" id="form"></form>
     <div id="pesquisa">

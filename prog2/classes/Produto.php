@@ -10,12 +10,13 @@ class Produto {
     }
 
     function incluir($dados) {
-        var_dump($dados);
+        $img = ($dados['img'] == "NULL" ? "NULL" : "'" . $dados['img'] . "'");
+
         $sql = sprintf("INSERT INTO produto VALUES
-                        (%s, '%s', %s, %s, %.2f, '%s', '%s', '%s', '%s')",
+                        (%s, '%s', %s, %s, %.2f, '%s', '%s', '%s', %s)",
                         $dados['cod'], $dados['nome'], $dados['ctipo'],
                         $dados['ccat'], $dados['valor'], $dados['dtfab'],
-                        $dados['dtval'], $dados['descr'], $dados['img']);
+                        $dados['dtval'], $dados['descr'], $img);
 
         $res = $this->bd->query($sql);
         return $res;

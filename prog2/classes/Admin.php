@@ -10,12 +10,12 @@ class Admin {
     }
 
     function login($login, $senha) {
-        $sql = "SELECT *
-                FROM admin
-                WHERE login = $login and senha = $senha";
+        $sql = sprintf("SELECT *
+                        FROM admin
+                        WHERE login = '%s' and senha = '%s'",
+                        $login, $senha);
+
         $res = $this->bd->query($sql);
         return $res;
     }
-}
-
 ?>

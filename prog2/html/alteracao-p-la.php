@@ -1,3 +1,8 @@
+<?php
+    include_once "../classes/BD.php";
+    $bd = new BD();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
@@ -32,7 +37,7 @@
                 </div>
 
                 <div class="grid-conteiner" id="formulario">
-                    <form action="" method="post" id="form"></form>
+                    <form action="temp.php" method="post" id="form"></form>
 
                     <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
@@ -47,14 +52,21 @@
 
                     <label for="s-tipo" id="l-tipo">Tipo</label>
                     <select name="tipo" id="s-tipo" form="form">
-                        <option value="Selecione..." selected>Selecione...</option>
-                        <option value="Higiene">Higiene</option>
+                        <option value="Selecione...">Selecione...</option>
                     </select>
 
                     <label for="s-categoria" id="l-categoria">Categoria</label>
                     <select name="categoria" id="s-categoria" form="form">
-                        <option value="Selecione..." selected>Selecione...</option>
-                        <option value="Higiene">Higiene</option>
+                        <option value="Selecione...">Selecione...</option>
+                        <?php
+                            $sql = "SELECT descr FROM tipo";
+                            $tipos = $bd->select($sql);
+
+                            foreach ($tipos as $t) {
+                                printf("<option value='%s'>%s</option>",
+                                       $t['descr'], ucfirst($t['descr']));
+                            }
+                        ?>
                     </select>
 
                     <label for="i-fabricacao" id="l-fabricacao">Fabricação</label>

@@ -21,6 +21,8 @@
                        'img' => "NULL");
 
         $res = $prod->incluir($dados);
+
+        header("Location")
     }
 ?>
 

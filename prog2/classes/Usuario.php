@@ -10,18 +10,20 @@ class Usuario {
     }
 
     function login($login, $senha) {
-        $sql = "SELECT *
-                FROM usuario
-                WHERE login = $login and senha = $senha";
+        $sql = sprintf("SELECT *
+                        FROM usuario
+                        WHERE login = '%s' and senha = '%s'",
+                        $login, $senha);
+
         $res = $this->bd->query($sql);
         return $res;
     }
+
     function cadastrar($dados) {
-        $sql = "INSERT INTO usuario (login, email, senha)
-        	VALUES (
-          {$dados['login']},
-        	{$dados['senha']},
-        	{$dados['email']})";
+        $sql = sprintf("INSERT INTO usuario
+        	            VALUES ('%s', '%s', '%s')",
+                        $dados['login'], $dados['senha'], $dados['email']);
+
         $res = $this->bd->query($sql);
         return $res;
     }

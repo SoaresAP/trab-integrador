@@ -1,3 +1,8 @@
+<?php
+    include_once "../classes/BD.php";
+    $bd = new BD();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
@@ -39,17 +44,14 @@
 
                         <tbody>
                             <?php
-                                include_once "../classes/BD.php";
-
-                                error_reporting(E_ALL ^ E_WARNING);
-
-                                $bd = new BD();
                                 $sql = "SELECT cod, nome
                                         FROM produto";
                                 $produtos = $bd->select($sql);
 
                                 if (isset($_GET['busca']))
                                     $busca = $_GET['busca'];
+                                else
+                                    $busca = "";
 
                                 foreach ($produtos as $p) {
                                     $has = strpos(strtolower($p['nome']), strtolower($busca));
@@ -59,12 +61,12 @@
                                                     <td>%s</td>
                                                     <td>%s</td>
                                                     <td>
-                                                        <a href='alteracao-p-la.php'>
+                                                        <a href='alteracao-p-la.php?cod=%s'>
                                                             <img src='../img/edit.png'>
                                                         </a>
                                                     </td>
                                                 </tr>",
-                                                $p['cod'], $p['nome']);
+                                                $p['cod'], $p['nome'], $p['cod']);
                                     }
                                 }
                             ?>
@@ -85,7 +87,6 @@
 
                         <tbody>
                             <?php
-                                $bd = new BD();
                                 $sql = "SELECT p.cod AS cod, nome, c.descr AS cat, valor, dtval
                                         FROM produto p JOIN categoria c ON p.ccat = c.cod";
                                 $produtos = $bd->select($sql);
@@ -108,12 +109,13 @@
                                                     <td>R$ %.2f</td>
                                                     <td>%s</td>
                                                     <td>
-                                                        <a href='alteracao-p-la.php'>
+                                                        <a href='alteracao-p-la.php?cod=%s'>
                                                             <img src='../img/edit.png'>
                                                         </a>
                                                     </td>
                                                 </tr>",
-                                                $p['cod'], $p['nome'], $p['cat'], (float) $p['valor'], $dtf);
+                                                $p['cod'], $p['nome'], $p['cat'],
+                                                (float) $p['valor'], $dtf, $p['cod']);
                                     }
                                 }
                             ?>

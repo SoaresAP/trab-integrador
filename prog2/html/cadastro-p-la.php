@@ -22,7 +22,7 @@
 
         $res = $prod->incluir($dados);
 
-        header("Location")
+        header("Location: pesquisa-la.php");
     }
 ?>
 

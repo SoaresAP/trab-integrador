@@ -48,27 +48,26 @@
                                         FROM produto";
                                 $produtos = $bd->select($sql);
 
-                                if (isset($_GET['busca']))
+                                if (isset($_GET['busca'])) {
                                     $busca = $_GET['busca'];
-                                else
-                                    $busca = "";
 
-                                foreach ($produtos as $p) {
-                                    $has = strpos(strtolower($p['nome']), strtolower($busca));
+                                    foreach ($produtos as $p) {
+                                        $has = preg_match("/".$busca."/i", $p['nome']);
 
-                                    if (empty($busca) || $has !== false) {
-                                        printf("<tr>
-                                                    <td>%s</td>
-                                                    <td>%s</td>
-                                                    <td>
-                                                        <a href='alteracao-p-la.php?cod=%s'>
-                                                            <img src='../img/edit.png'>
-                                                        </a>
-                                                    </td>
-                                                </tr>",
-                                                $p['cod'], $p['nome'], $p['cod']);
+                                        if (empty($busca) || $has != 0) {
+                                            printf("<tr>
+                                                        <td>%s</td>
+                                                        <td>%s</td>
+                                                        <td>
+                                                            <a href='alteracao-p-la.php?cod=%s'>
+                                                                <img src='../img/edit.png'>
+                                                            </a>
+                                                        </td>
+                                                    </tr>",
+                                                    $p['cod'], $p['nome'], $p['cod']);
+                                        }
                                     }
-                                }
+                                } else header("Location: pesquisa");
                             ?>
                         </tbody>
                     </table>
@@ -91,33 +90,36 @@
                                         FROM produto p JOIN categoria c ON p.ccat = c.cod";
                                 $produtos = $bd->select($sql);
 
-                                if (isset($_GET['busca']))
+                                if (isset($_GET['busca'])) {
                                     $busca = $_GET['busca'];
 
-                                foreach ($produtos as $p) {
-                                    $dtf = substr($p['dtval'], 8, 2) . "/"
-                                           . substr($p['dtval'], 5, 2) . "/"
-                                           . substr($p['dtval'], 0, 4);
+                                    foreach ($produtos as $p) {
+                                        $dtf = substr($p['dtval'], 8, 2) . "/"
+                                               . substr($p['dtval'], 5, 2) . "/"
+                                               . substr($p['dtval'], 0, 4);
 
-                                    $has = strpos(strtolower($p['nome']), strtolower($busca));
+                                        $has = preg_match("/".$busca."/i", $p['nome']);
 
-                                    if (empty($busca) || $has !== false) {
-                                        printf("<tr>
-                                                    <td>%s</td>
-                                                    <td>%s</td>
-                                                    <td>%s</td>
-                                                    <td>R$ %.2f</td>
-                                                    <td>%s</td>
-                                                    <td>
-                                                        <a href='alteracao-p-la.php?cod=%s'>
-                                                            <img src='../img/edit.png'>
-                                                        </a>
-                                                    </td>
-                                                </tr>",
-                                                $p['cod'], $p['nome'], $p['cat'],
-                                                (float) $p['valor'], $dtf, $p['cod']);
+                                        if (empty($busca) || $has != 0) {
+                                            printf("<tr>
+                                                        <td>%s</td>
+                                                        <td>%s</td>
+                                                        <td>%s</td>
+                                                        <td>R$ %.2f</td>
+                                                        <td>%s</td>
+                                                        <td>
+                                                            <a href='alteracao-p-la.php?cod=%s'>
+                                                                <img src='../img/edit.png'>
+                                                            </a>
+                                                        </td>
+                                                    </tr>",
+                                                    $p['cod'], $p['nome'], $p['cat'],
+                                                    (float) $p['valor'], $dtf, $p['cod']);
+                                        }
                                     }
                                 }
+
+
                             ?>
                         </tbody>
                     </table>

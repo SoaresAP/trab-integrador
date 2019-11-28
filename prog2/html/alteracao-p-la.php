@@ -1,6 +1,9 @@
 <?php
     include_once "../classes/BD.php";
     $bd = new BD();
+
+    include_once "../classes/Produto.php";
+    $prod = new Produto();
 ?>
 
 <!DOCTYPE html>
@@ -37,46 +40,77 @@
                 </div>
 
                 <div class="grid-conteiner" id="formulario">
+                    <?php
+                        if (isset($_GET['cod'])) {
+                            $sql = "SELECT p.cod AS cod, p.nome AS nome, p.valor AS valor,
+                                           t.descr AS tipo, c.descr AS cat, p.dtfab AS dtfab,
+                                           p.dtval AS dtval, p.descr AS descr, p.img AS img
+                                    FROM produto p JOIN tipo t ON p.ctipo = t.cod
+                                                   JOIN categoria c ON p.ccat = c.cod
+                                    WHERE p.cod = " . $_GET['cod'];
+
+                            $produto = $bd->select($sql)[0];
+                        } else header("Location: pesquisa.php");
+                    ?>
+
                     <form action="temp.php" method="post" id="form"></form>
 
                     <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
                     <label for="i-codigo" id="l-codigo">Código</label>
-                    <input name="codigo" id="i-codigo" type="text" form="form">
+                    <input name="codigo" id="i-codigo" type="text" form="form"
+                           value="<?= $produto['cod']; ?>">
 
                     <label for="i-nome" id="l-nome">Nome</label>
-                    <input name="nome" id="i-nome" type="text" form="form">
+                    <input name="nome" id="i-nome" type="text" form="form"
+                           value="<?= $produto['nome']; ?>">
 
                     <label for="i-valor" id="l-valor">Valor</label>
-                    <input name="valor" id="i-valor" type="text" form="form">
+                    <input name="valor" id="i-valor" type="text" form="form"
+                           value="<?= $produto['valor']; ?>">
 
                     <label for="s-tipo" id="l-tipo">Tipo</label>
                     <select name="tipo" id="s-tipo" form="form">
-                        <option value="Selecione...">Selecione...</option>
-                    </select>
-
-                    <label for="s-categoria" id="l-categoria">Categoria</label>
-                    <select name="categoria" id="s-categoria" form="form">
                         <option value="Selecione...">Selecione...</option>
                         <?php
                             $sql = "SELECT descr FROM tipo";
                             $tipos = $bd->select($sql);
 
                             foreach ($tipos as $t) {
-                                printf("<option value='%s'>%s</option>",
-                                       $t['descr'], ucfirst($t['descr']));
+                                printf("<option value='%s' %s>%s</option>",
+                                       strtolower($t['descr']),
+                                       ($t['descr'] == $produto['tipo'] ? "selected" : ""),
+                                       $t['descr']);
+                            }
+                        ?>
+                    </select>
+
+                    <label for="s-categoria" id="l-categoria">Categoria</label>
+                    <select name="categoria" id="s-categoria" form="form">
+                        <option value="Selecione...">Selecione...</option>
+                        <?php
+                            $sql = "SELECT descr FROM categoria";
+                            $cats = $bd->select($sql);
+
+                            foreach ($cats as $c) {
+                                printf("<option value='%s' %s>%s</option>",
+                                       strtolower($c['descr']),
+                                       ($c['descr'] == $produto['cat'] ? "selected" : ""),
+                                       $c['descr']);
                             }
                         ?>
                     </select>
 
                     <label for="i-fabricacao" id="l-fabricacao">Fabricação</label>
-                    <input name="fabricacao" id="i-fabricacao" type="date" form="form">
+                    <input name="fabricacao" id="i-fabricacao" type="date" form="form"
+                           value="<?= $produto['dtfab']; ?>">
 
                     <label for="i-validade" id="l-validade">Validade</label>
-                    <input name="validade" id="i-validade" type="date" form="form">
+                    <input name="validade" id="i-validade" type="date" form="form"
+                           value="<?= $produto['dtval']; ?>">
 
                     <label for="i-descricao" id="l-descricao">Descrição</label>
-                    <textarea name="descricao" id="i-descricao" rows="2" form="form"></textarea>
+                    <textarea name="descricao" id="i-descricao" rows="2" form="form"><?= $produto['descr'] ?></textarea>
                 </div>
 
                 <div class="grid-conteiner" id="envio">

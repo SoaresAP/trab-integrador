@@ -22,15 +22,15 @@ h1, #envio * {
     font-size: calc(5vw);
 }
 
-input[type="text"], label {
+input[type="text"], input[type="date"], label, select {
     margin: 2% 0;
 }
 
-input[type="text"], textarea, input[type="image"] {
+input[type="text"], input[type="date"], textarea, input[type="image"], select {
     border: 2px solid black;
 }
 
-input[type="text"], textarea {
+input[type="text"], input[type="date"], textarea, select {
     font-size: calc(4vw);
 
     padding: 0 3vw;
@@ -44,6 +44,11 @@ label {
     text-align: right;
 
     margin-right: 3%;
+}
+
+textarea {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #i-img {
@@ -63,10 +68,10 @@ label {
 #i-valor { grid-area: i-valor; }
 
 #l-tipo { grid-area: l-tipo; }
-#i-tipo { grid-area: i-tipo; }
+#s-tipo { grid-area: s-tipo; }
 
 #l-categoria { grid-area: l-categoria; }
-#i-categoria { grid-area: i-categoria; }
+#s-categoria { grid-area: s-categoria; }
 
 #l-fabricacao { grid-area: l-fabricacao; }
 #i-fabricacao { grid-area: i-fabricacao; }
@@ -85,8 +90,8 @@ label {
                          "l-codigo i-codigo"
                          "l-nome i-nome"
                          "l-valor i-valor"
-                         "l-tipo i-tipo"
-                         "l-categoria i-categoria"
+                         "l-tipo s-tipo"
+                         "l-categoria s-categoria"
                          "l-fabricacao i-fabricacao"
                          "l-validade i-validade"
                          "l-descricao i-descricao";
@@ -133,12 +138,11 @@ main {
         height: 150px;
     }
 
-    input[type="text"], textarea, label {
+    input[type="text"], input[type="date"], textarea, label, select {
         font-size: 1em;
     }
 
     #formulario {
-        /* grid-template-rows: auto auto auto auto auto auto auto; */
         grid-template-rows: calc(100% / 7) calc(100% / 7) calc(100% / 7)
                             calc(100% / 7) calc(100% / 7) calc(100% / 7)
                             calc(100% / 7);
@@ -147,7 +151,7 @@ main {
         grid-template-areas: "l-codigo i-codigo . img"
                              "l-nome i-nome . img"
                              "l-valor i-valor . img"
-                             "l-tipo i-tipo l-categoria i-categoria"
+                             "l-tipo s-tipo l-categoria s-categoria"
                              "l-fabricacao i-fabricacao l-validade i-validade"
                              "l-descricao i-descricao i-descricao i-descricao"
                              "l-descricao i-descricao i-descricao i-descricao";

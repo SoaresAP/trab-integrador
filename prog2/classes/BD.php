@@ -16,8 +16,8 @@ class BD {
     function select($sql) {
         $retorno = $this->conexao->query($sql);
         $arrayResultados = array();
-        if ($retorno->num_rows() > 0) {
-            while($linha = $retorno->fetch_assoc()) {
+        if ($retorno->num_rows > 0) {
+            while ($linha = $retorno->fetch_assoc()) {
                 $arrayResultados[] = $linha;
             }
         }

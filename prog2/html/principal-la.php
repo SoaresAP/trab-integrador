@@ -26,7 +26,7 @@
             <?php include "../includes/head3.php"; ?>
         </div>
 
-        <!-- Scripts -->
+        <!-- scripts -->
 
         <script src="../js/menu-lateral.js"></script>
     </body>

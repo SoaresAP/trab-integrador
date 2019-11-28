@@ -10,23 +10,29 @@ class Produto {
     }
 
     function incluir($dados) {
-        $sql = "INSERT INTO produto
-                VALUES ($dados['cod'], $dados['nome'], $dados['ctipo'],
+        var_dump($dados);
+        $sql = sprintf("INSERT INTO produto VALUES
+                        (%s, '%s', %s, %s, %.2f, '%s', '%s', '%s', '%s')",
+                        $dados['cod'], $dados['nome'], $dados['ctipo'],
                         $dados['ccat'], $dados['valor'], $dados['dtfab'],
-                        $dados['dtval'], $dados['descr'], $dados['img'])";
+                        $dados['dtval'], $dados['descr'], $dados['img']);
 
         $res = $this->bd->query($sql);
         return $res;
     }
 
     function alterar($dados) {
-        $sql = "UPDATE produto
-                SET cod = $dados['cod'], nome = $dados['nome'],
-                    ctipo = $dados['ctipo'], ccat = $dados['ccat'],
-                    valor = $dados['valor'], dtfab = $dados['dtfab'],
-                    dtval = $dados['dtval'], descr = $dados['descr'],
-                    img = $dados['img']
-                WHERE id = $dados['id']";
+        $sql = sprintf("UPDATE produto
+                        SET cod = %s, nome = '%s',
+                            ctipo = %s, ccat = %s,
+                            valor = %.2f, dtfab = '%s',
+                            dtval = '%s', descr = '%s',
+                            img = '%s'
+                        WHERE id = %s",
+                        $dados['cod'], $dados['nome'], $dados['ctipo'],
+                        $dados['ccat'], $dados['valor'], $dados['dtfab'],
+                        $dados['dtval'], $dados['descr'], $dados['img'],
+                        $dados['cod']);
 
         $res = $this->bd->query($sql);
         return $res;
@@ -39,7 +45,6 @@ class Produto {
         $res = $this->bd->query($sql);
         return $res;
     }
-
 }
 
 ?>

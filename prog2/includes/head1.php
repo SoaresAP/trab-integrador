@@ -21,11 +21,11 @@
 
     </div>
     <div id="cadastro">
-        <a href="#"><img src="../img/cadastro.png"></a>
+        <a href="cadastro-u.php"><img src="../img/cadastro.png"></a>
     </div>
     <div id="login">
 
-        <a href="#"><img src="../img/login.png"></a>
+        <a href="login.php"><img src="../img/login.png"></a>
 
     </div>
 

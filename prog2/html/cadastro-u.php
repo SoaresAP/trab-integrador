@@ -1,3 +1,39 @@
+<?php
+  include_once "../classes/Usuario.php";
+
+  if (isset($_POST['cadastrar'])){
+
+    if (empty($_POST['usuario'])){
+        echo "Preencha o login!";
+
+    }
+    if (empty($_POST['email'])){
+        echo "Preencha o email!";
+
+    }
+    if (empty($_POST['senha'])){
+        echo "Preencha a senha!";
+
+    }
+
+
+
+    $dados = array();
+        $dados['login'] = $_POST['usuario'];
+        $dados['senha'] = $_POST['senha'];
+        $dados['email'] = $_POST['email'];
+
+        $usuario = new Usuario();
+        $resultado = $usuario->cadastrar($dados);
+        if ($resultado) {
+            echo "Usuário cadastrado com sucesso!";
+        }
+
+  }
+
+
+
+ ?>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
@@ -20,22 +56,22 @@
             <div class="logo">
                 <img src="../img/vitari.jpg">
             </div>
+
             <div class="textos">
                 <p>Login:
                 <p>Email:
                 <p>Senha:
                 <p>Confirmar senha:
-
             </div>
 
             <div class="entrada">
 
-                <form class="" action="temp.php" method="post" id="entrada"></form>
+                <form class="" action="" method="post" id="entrada"></form>
 
-                <input type="text" name="usuario" id="usuario" autofocus form="entrada"><br>
+                <input type="text" name="usuario" id="usuario" autofocus form="entrada" maxlength="10"><br>
                 <input type="text" name="email" id="email" form="entrada"><br>
-                <input type="password" name="senha" id="senha" form="entrada"><br>
-                <input type="password" name="confirmasenha" id="confirmasenha" form="entrada"><br>
+                <input type="password" name="senha" id="senha" form="entrada" maxlength="20"><br>
+                <input type="password" name="confirmasenha" id="confirmasenha" form="entrada" maxlength="20"><br>
 
             </div>
 

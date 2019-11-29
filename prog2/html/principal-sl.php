@@ -16,11 +16,11 @@
           $lista = $produto->filtroCategoria($_GET['cat']);
           $titulo = $CATEGORIAS[$_GET['cat']];
         }
-        else{
-          $lista = $produto->filtroNovidades();
-          $titulo = "Novidades";
-        }
         */
+        else {
+          $lista = $produto->listarTodos();
+          
+        }
 
 ?>
 
@@ -71,8 +71,8 @@
                  }
             ?>
         </div>
-        <script src="../js/menu-lateral.js">
-        </script>
+        <script src="../js/submit-busca.js"></script>
+        <script src="../js/menu-lateral.js"></script>
     </body>
 
 </html>

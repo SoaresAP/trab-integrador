@@ -7,6 +7,7 @@
 
     // controller
       	if(isset($_GET['busca'])){
+
           $lista = $produto->filtroBusca($_GET['busca']);
           $titulo ="Resultado da busca por \"{$_GET['busca']}\" ";
         }
@@ -47,27 +48,28 @@
 
 
             <?php include_once "../includes/head1.php"; ?>
+            <?php
+                    if(empty($lista)) {
+                        echo "<h2>Nenhum produto encontrado</h2>";
+                    }
+                    else {
 
-                <main class="grid-conteiner">
-                  <?php
-                          if(empty($lista)) {
-                              echo "<h2>Nenhum produto encontrado</h2>";
-                          }
-                          else {
+                        foreach($lista as $n => $v){
+            ?>
 
-                              foreach($lista as $n => $v){
-                  ?>
+                          <main class="grid-conteiner">
 
-                    <div class="produto">
-                        <img src="../img/perfume.png">
-                        <p><?=$lista[$n]['nome'];?></p>
-                        <p><?=$lista[$n]['valor'];?></p>
-                    </div>
-               </main>
-  <?php
-            }
-       }
-  ?>
+                              <div class="produto">
+                                  <img src="../img/perfume.png">
+                                  <p><?=$lista[$n]['nome'];?></p>
+                                  <p><?=$lista[$n]['valor'];?></p>
+                              </div>
+
+                         </main>
+            <?php
+                      }
+                 }
+            ?>
         </div>
         <script src="../js/menu-lateral.js">
         </script>

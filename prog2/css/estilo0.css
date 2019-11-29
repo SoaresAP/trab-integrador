@@ -14,6 +14,8 @@ input[type="submit"] {
 
 .grid-conteiner {
     display: grid;
+
+
 }
 
 
@@ -31,6 +33,7 @@ input[type="submit"] {
 
     grid-template-rows: 30% auto;
     grid-row-gap: 3%;
+
 }
 
 
@@ -39,5 +42,6 @@ input[type="submit"] {
     #tela {
         grid-template-rows: 20% auto;
     }
+    
 
 }

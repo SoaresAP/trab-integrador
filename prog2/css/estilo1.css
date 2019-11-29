@@ -66,9 +66,12 @@ main {
     margin: 7px;
     margin-top: 30px;
 
+
 }
 main > div{
     border: 1px solid black;
+
+
 }
 
 #barra-categorias > nav{
@@ -128,6 +131,7 @@ main > div{
         grid-template-rows: 80% auto;
         grid-template-columns: 25% 45% auto auto;
     }
+
 
     main {
         grid-template-columns: auto auto auto auto;

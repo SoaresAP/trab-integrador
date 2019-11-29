@@ -19,7 +19,7 @@
         */
         else {
           $lista = $produto->listarTodos();
-          
+
         }
 
 ?>
@@ -49,26 +49,29 @@
 
             <?php include_once "../includes/head1.php"; ?>
             <?php
-                    if(empty($lista)) {
-                        echo "<h2>Nenhum produto encontrado</h2>";
-                    }
-                    else {
+
 
                         foreach($lista as $n => $v){
             ?>
 
                           <main class="grid-conteiner">
+                              <?php
+                              if(empty($lista)) {
+                                  var_dumo("asASAs");
+                              }
+
+                              ?>
 
                               <div class="produto">
-                                  <img src="../img/perfume.png">
+                                  <img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?>">
                                   <p><?=$lista[$n]['nome'];?></p>
-                                  <p><?=$lista[$n]['valor'];?></p>
+                                  <p><?=$produto->formataPreco($lista[$n]['valor']);?></p>
                               </div>
 
                          </main>
             <?php
                       }
-                 }
+
             ?>
         </div>
         <script src="../js/submit-busca.js"></script>

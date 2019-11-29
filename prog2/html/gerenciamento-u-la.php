@@ -1,3 +1,8 @@
+<?php
+    include_once "../classes/BD.php";
+    $bd = new BD();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
@@ -38,9 +43,6 @@
 
                         <tbody>
                             <?php
-                                include_once "../classes/BD.php";
-
-                                $bd = new BD();
                                 $sql = "SELECT login, email
                                         FROM usuario";
                                 $usuarios = $bd->select($sql);
@@ -50,12 +52,12 @@
                                                 <td>%s</td>
                                                 <td>%s</td>
                                                 <td>
-                                                    <a href='#'>
+                                                    <a href='exclusao-u.php?login=%s'>
                                                         <img src='../img/excluir.png'>
                                                     </a>
                                                 </td>
                                             </tr>",
-                                            $u['login'], $u['email']);
+                                            $u['login'], $u['email'], $u['login']);
                                 }
                             ?>
                         </tbody>

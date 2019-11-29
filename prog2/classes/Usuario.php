@@ -27,5 +27,13 @@ class Usuario {
         $res = $this->bd->query($sql);
         return $res;
     }
+
+    function excluir($login) {
+        $sql = "DELETE FROM usuario
+                WHERE login = '" . $login . "'";
+
+        $res = $this->bd->query($sql);
+        return $res;
+    }
 }
 ?>

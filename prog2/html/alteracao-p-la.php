@@ -4,6 +4,30 @@
 
     include_once "../classes/Produto.php";
     $prod = new Produto();
+
+    if (!empty($_POST)) {
+        if ($_POST['envio'] == "alterar") {
+            $tipo = $bd->select("SELECT cod AS tipo
+                                 FROM tipo
+                                 WHERE descr = '" . $_POST['tipo'] . "'")[0]['tipo'];
+
+            $cat = $bd->select("SELECT cod AS cat
+                                FROM categoria
+                                WHERE descr = '" . $_POST['categoria'] . "'")[0]['cat'];
+
+            $dados = array('cod' => $_POST['codigo'], 'nome' => $_POST['nome'],
+                           'ctipo' => $tipo, 'ccat' => $cat,
+                           'valor' => $_POST['valor'], 'dtfab' => $_POST['fabricacao'],
+                           'dtval' => $_POST['validade'], 'descr' => $_POST['descricao'],
+                           'img' => "NULL");
+
+            $res = $prod->alterar($dados);
+        } else if ($_POST['envio'] == "excluir") {
+            $res = $prod->excluir($_POST['codigo']);
+        }
+
+        header("Location: pesquisa-la.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -53,12 +77,12 @@
                         } else header("Location: pesquisa.php");
                     ?>
 
-                    <form action="temp.php" method="post" id="form"></form>
+                    <form action="" method="post" id="form"></form>
 
                     <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
 
                     <label for="i-codigo" id="l-codigo">Código</label>
-                    <input name="codigo" id="i-codigo" type="text" form="form"
+                    <input name="codigo" id="i-codigo" type="text" readonly form="form"
                            value="<?= $produto['cod']; ?>">
 
                     <label for="i-nome" id="l-nome">Nome</label>
@@ -114,8 +138,10 @@
                 </div>
 
                 <div class="grid-conteiner" id="envio">
-                    <input name="excluir" type="submit" id="i-excluir" value="EXCLUIR" form="form">
-                    <input name="alterar" type="submit" id="i-alterar" value="ALTERAR" form="form">
+                    <input type="submit" name="excluir" id="i-excluir" value="EXCLUIR" form="form">
+                    <input type="submit" name="alterar" id="i-alterar" value="ALTERAR" form="form">
+
+                    <input type="hidden" name="envio" id="i-envio" form="form">
                 </div>
             </main>
         </div>

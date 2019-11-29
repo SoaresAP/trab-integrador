@@ -102,6 +102,18 @@ function validaDados() {
     }
 
 
-    if (valid) form.submit();
+    if (valid){
+        alt = document.querySelector("input[id='i-alterar']");
+        exc = document.querySelector("input[id='i-excluir']");
+        hid = document.querySelector("input[id='i-envio']");
+
+        if (event.explicitOriginalTarget == alt) {
+            hid.value = "alterar";
+            form.submit();
+        } else if (event.explicitOriginalTarget == exc) {
+            hid.value = "excluir";
+            form.submit();
+        }
+    }
     else return false;
 }

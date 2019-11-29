@@ -23,25 +23,26 @@ class Produto {
     }
 
     function alterar($dados) {
+        $img = ($dados['img'] == "NULL" ? "NULL" : "'" . $dados['img'] . "'");
+
         $sql = sprintf("UPDATE produto
                         SET cod = %s, nome = '%s',
                             ctipo = %s, ccat = %s,
                             valor = %.2f, dtfab = '%s',
                             dtval = '%s', descr = '%s',
-                            img = '%s'
-                        WHERE id = %s",
+                            img = %s
+                        WHERE cod = %s",
                         $dados['cod'], $dados['nome'], $dados['ctipo'],
                         $dados['ccat'], $dados['valor'], $dados['dtfab'],
-                        $dados['dtval'], $dados['descr'], $dados['img'],
-                        $dados['cod']);
+                        $dados['dtval'], $dados['descr'], $img, $dados['cod']);
 
         $res = $this->bd->query($sql);
         return $res;
     }
 
-    function excluir($id) {
+    function excluir($cod) {
         $sql = "DELETE FROM produto
-                WHERE id = $id";
+                WHERE cod = " . $cod;
 
         $res = $this->bd->query($sql);
         return $res;

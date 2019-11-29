@@ -67,7 +67,7 @@
                                                     $p['cod'], $p['nome'], $p['cod']);
                                         }
                                     }
-                                } else header("Location: pesquisa");
+                                } else header("Location: pesquisa.php");
                             ?>
                         </tbody>
                     </table>

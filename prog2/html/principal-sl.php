@@ -1,5 +1,32 @@
+
+<?php
+    require_once "../classes/Produto.php";
+    //require_once "includes/functions.php"; MOSTRA A IMAGEM DO PRODUTO
+
+    $produto = new Produto();
+
+    // controller
+      	if(isset($_GET['busca'])){
+          $lista = $produto->filtroBusca($_GET['busca']);
+          $titulo ="Resultado da busca por \"{$_GET['busca']}\" ";
+        }
+        /*
+        elseif(isset($_GET['cat'])){
+          $lista = $produto->filtroCategoria($_GET['cat']);
+          $titulo = $CATEGORIAS[$_GET['cat']];
+        }
+        else{
+          $lista = $produto->filtroNovidades();
+          $titulo = "Novidades";
+        }
+        */
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
+
     <head>
         <title>Vitari - Cosméticos e Perfumaria</title>
 
@@ -18,77 +45,32 @@
 
         <div class="grid-conteiner" id="tela">
 
-            <!--HEAD-->
+
             <?php include_once "../includes/head1.php"; ?>
 
-            <main class="grid-conteiner">
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
+                <main class="grid-conteiner">
+                  <?php
+                          if(empty($lista)) {
+                              echo "<h2>Nenhum produto encontrado</h2>";
+                          }
+                          else {
 
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Shampoo</p>
-                    <p>R$ 60,00</p>
-                </div>
+                              foreach($lista as $n => $v){
+                  ?>
 
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Máscara</p>
-                    <p>R$ 30,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Shampoo</p>
-                    <p>R$ 50,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
-
-                <div class="produto">
-                    <img src="../img/perfume.png">
-                    <p>Perfume Ferrari masculino</p>
-                    <p>R$ 80,00</p>
-                </div>
-            </main>
+                    <div class="produto">
+                        <img src="../img/perfume.png">
+                        <p><?=$lista[$n]['nome'];?></p>
+                        <p><?=$lista[$n]['valor'];?></p>
+                    </div>
+               </main>
+  <?php
+            }
+       }
+  ?>
         </div>
-
-
         <script src="../js/menu-lateral.js">
-
         </script>
-
     </body>
 
 </html>

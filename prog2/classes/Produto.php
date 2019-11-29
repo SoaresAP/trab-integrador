@@ -47,6 +47,15 @@ class Produto {
         $res = $this->bd->query($sql);
         return $res;
     }
+    function filtroBusca($busca) {
+        $sql = "SELECT * FROM produto
+                WHERE nome
+                LIKE '%{$busca}%'";
+
+        $res = $this->bd->query($sql);
+        return $res;
+    }
+
 }
 
 ?>

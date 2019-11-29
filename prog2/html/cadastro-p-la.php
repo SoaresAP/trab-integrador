@@ -18,7 +18,7 @@
                        'ctipo' => $tipo, 'ccat' => $cat,
                        'valor' => $_POST['valor'], 'dtfab' => $_POST['fabricacao'],
                        'dtval' => $_POST['validade'], 'descr' => $_POST['descricao'],
-                       'img' => "NULL");
+                       'img' => "../img/default.png");
 
         $res = $prod->incluir($dados);
 
@@ -62,7 +62,7 @@
                 <div class="grid-conteiner" id="formulario">
                     <form action="" method="post" id="form"></form>
 
-                    <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
+                    <input name="img" id="i-img" type="image" src="../img/default.png" readonly form="form">
 
                     <label for="i-codigo" id="l-codigo">Código</label>
                     <input name="codigo" id="i-codigo" type="text" form="form">
@@ -112,7 +112,8 @@
                 </div>
 
                 <div class="grid-conteiner" id="envio">
-                    <input name="cadastrar" id="i-cadastrar" type="submit" value="CADASTRAR" form="form">
+                    <input name="cadastrar" type="submit" id="i-cadastrar" value="CADASTRAR" form="form">
+                    <input type="hidden" name="envio" id="i-envio" form="form">
                 </div>
             </main>
         </div>

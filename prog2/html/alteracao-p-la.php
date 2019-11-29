@@ -19,7 +19,7 @@
                            'ctipo' => $tipo, 'ccat' => $cat,
                            'valor' => $_POST['valor'], 'dtfab' => $_POST['fabricacao'],
                            'dtval' => $_POST['validade'], 'descr' => $_POST['descricao'],
-                           'img' => "NULL");
+                           'img' => "../img/default.png");
 
             $res = $prod->alterar($dados);
         } else if ($_POST['envio'] == "excluir") {
@@ -79,7 +79,7 @@
 
                     <form action="" method="post" id="form"></form>
 
-                    <input name="img" id="i-img" type="image" src="../img/default.png" form="form">
+                    <input name="img" id="i-img" type="image" src="../img/default.png" disabled form="form">
 
                     <label for="i-codigo" id="l-codigo">Código</label>
                     <input name="codigo" id="i-codigo" type="text" readonly form="form"

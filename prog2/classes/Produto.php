@@ -61,7 +61,7 @@ class Produto {
         return $res;
     }
     function filtroCategoria($categoria) {
-        $sql = "SELECT * FROM produto p join categoria c
+        $sql = "SELECT p.cod,p.nome,p.valor,p.descr,p.img FROM produto p join categoria c
                 ON p.ccat = c.cod
                 WHERE c.descr = '$categoria'";
         $res = $this->bd->select($sql);

@@ -60,6 +60,13 @@ class Produto {
         $res = $this->bd->select($sql);
         return $res;
     }
+    function filtroCategoria($categoria) {
+        $sql = "SELECT * FROM produto p join categoria c
+                ON p.ccat = c.cod
+                WHERE c.descr = '$categoria'";
+        $res = $this->bd->select($sql);
+        return $res;
+    }
     function listarTodos() {
         $sql = "SELECT * FROM produto";
         $res = $this->bd->select($sql);

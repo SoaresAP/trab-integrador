@@ -10,13 +10,13 @@
     </div>
     <div class="barra" tabindex="0">
         <nav>
-            <a href="#"><div class="link">UNHAS</div></a>
-            <a href="#"><div class="link">MAQUIAGEM</div></a>
-            <a href="#"><div class="link">CABELOS</div></a>
-            <a href="#"><div class="link">KITS</div></a>
-            <a href="#"><div class="link">HIGIENE</div></a>
-            <a href="#"><div class="link">PELE</div></a>
-            <a href="#"><div class="link">PERFUME</div></a>
+            <a href="principal-sl.php?cat=Unhas"><div class="link">UNHAS</div></a>
+            <a href="principal-sl.php?cat=Maquiagem"><div class="link">MAQUIAGEM</div></a>
+            <a href="principal-sl.php?cat=Cabelos"><div class="link">CABELOS</div></a>
+            <a href="principal-sl.php?cat=Kits"><div class="link">KITS</div></a>
+            <a href="principal-sl.php?cat=Higiene"><div class="link">HIGIENE</div></a>
+            <a href="principal-sl.php?cat=Pele"><div class="link">PELE</div></a>
+            <a href="principal-sl.php?cat=Perfume"><div class="link">PERFUME</div></a>
 
         </nav>
 
@@ -40,13 +40,13 @@
 
     <div id="barra-categorias">
         <nav>
-          <a href="#">UNHAS</a> |
-          <a href="#">MAQUIAGEM</a> |
-          <a href="#">CABELOS</a> |
-          <a href="#">KITS</a> |
-          <a href="#">HIGIENE</a> |
-          <a href="#">PELE</a> |
-          <a href="#">PERFUME</a>
+          <a href="principal-sl.php?cat=Unhas">UNHAS</a> |
+          <a href="principal-sl.php?cat=Maquiagem">MAQUIAGEM</a> |
+          <a href="principal-sl.php?cat=Cabelos">CABELOS</a> |
+          <a href="principal-sl.php?cat=Kits">KITS</a> |
+          <a href="principal-sl.php?cat=Higiene">HIGIENE</a> |
+          <a href="principal-sl.php?cat=Pele">PELE</a> |
+          <a href="principal-sl.php?cat=Perfume">PERFUME</a>
         </nav>
     </div>
 </header>

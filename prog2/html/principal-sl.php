@@ -10,12 +10,12 @@
           $lista = $produto->filtroBusca($_GET['busca']);
           $titulo ="Resultado da busca por \"{$_GET['busca']}\" ";
         }
-        /*
+
         elseif(isset($_GET['cat'])){
           $lista = $produto->filtroCategoria($_GET['cat']);
-          $titulo = $CATEGORIAS[$_GET['cat']];
+          
         }
-        */
+
         else {
           $lista = $produto->listarTodos();
 

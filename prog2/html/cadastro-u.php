@@ -1,39 +1,21 @@
 <?php
-  include_once "../classes/Usuario.php";
+    include_once "../classes/Usuario.php";
+    $usuario = new Usuario();
 
-  if (isset($_POST['cadastrar'])){
+    if (!empty($_POST)){
+        $dados = array('login' => $_POST['login'],
+                       'senha' => $_POST['senha'],
+                       'email' => $_POST['email']);
 
-    if (empty($_POST['usuario'])){
-        echo "Preencha o login!";
-
-    }
-    if (empty($_POST['email'])){
-        echo "Preencha o email!";
-
-    }
-    if (empty($_POST['senha'])){
-        echo "Preencha a senha!";
-
-    }
-
-
-
-    $dados = array();
-        $dados['login'] = $_POST['usuario'];
-        $dados['senha'] = $_POST['senha'];
-        $dados['email'] = $_POST['email'];
-
-        $usuario = new Usuario();
-        $resultado = $usuario->cadastrar($dados);
-        if ($resultado) {
-            echo "Usuário cadastrado com sucesso!";
+        $res = $usuario->cadastrar($dados);
+        if ($res) {
+            header("Location: principal-sl.php");
+        } else {
+            header("Location: cadastro-u.php");
         }
+    }
+?>
 
-  }
-
-
-
- ?>
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
@@ -58,28 +40,31 @@
             </div>
 
             <div class="textos">
-                <p>Login:
-                <p>Email:
-                <p>Senha:
-                <p>Confirmar senha:
+                <p id="p-login">Login:</p>
+                <p id="p-email">Email:</p>
+                <p id="p-senha">Senha:</p>
+                <p id="p-confirmasenha">Confirmar senha:</p>
             </div>
 
             <div class="entrada">
 
-                <form class="" action="" method="post" id="entrada"></form>
+                <form action="" method="post" id="form"></form>
 
-                <input type="text" name="usuario" id="usuario" autofocus form="entrada" maxlength="10"><br>
-                <input type="text" name="email" id="email" form="entrada"><br>
-                <input type="password" name="senha" id="senha" form="entrada" maxlength="20"><br>
-                <input type="password" name="confirmasenha" id="confirmasenha" form="entrada" maxlength="20"><br>
+                <input type="text" name="login" id="login" autofocus form="form" maxlength="10"><br>
+                <input type="text" name="email" id="email" form="form" maxlength="40"><br>
+                <input type="password" name="senha" id="senha" form="form" maxlength="20"><br>
+                <input type="password" name="confirmasenha" id="confirmasenha" form="form" maxlength="20"><br>
 
             </div>
 
-            <input form="entrada" type="submit" name="cadastrar" value="CADASTRAR">
+            <input type="submit" name="cadastrar" value="CADASTRAR" form="form">
 
         </div>
-
       </div>
+
+      <!-- scripts -->
+
+      <script src="../js/validacao-cadastro-u.js"></script>
 
     </body>
 </html>

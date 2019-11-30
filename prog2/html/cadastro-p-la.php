@@ -68,7 +68,7 @@
                     <input name="codigo" id="i-codigo" type="text" form="form">
 
                     <label for="i-nome" id="l-nome">Nome</label>
-                    <input name="nome" id="i-nome" type="text" form="form">
+                    <input name="nome" id="i-nome" type="text" form="form" maxlength="30">
 
                     <label for="i-valor" id="l-valor">Valor</label>
                     <input name="valor" id="i-valor" type="text" form="form">

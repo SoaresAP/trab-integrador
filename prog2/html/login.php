@@ -19,7 +19,7 @@
             </div>
 
             <div class="entrada">
-                <input type="text" name="usuario" id="usuario" placeholder="Login" autofocus><br>
+                <input type="text" name="login" id="login" placeholder="Login" autofocus><br>
                 <input type="password" name="senha" id="senha" placeholder="Senha"><br>
                 <button type="button" name="entrar">Entrar</button>
             </div>

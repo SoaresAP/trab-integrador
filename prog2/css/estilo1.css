@@ -85,7 +85,7 @@ main > div{
 
 
 }
-#login > a > img{
+div#login > a > img{
     max-width: 50px;
     height: 50px;
 
@@ -142,11 +142,11 @@ main > div{
         border: 1px solid black;
         max-height: 100vh;
         padding-top: 30px;
-  
+
 
     }
 
-    #login {
+    div#login {
         grid-area: login;
         border: 1px solid black;
         max-height: 100vh;
@@ -161,7 +161,7 @@ main > div{
   #cadastro > a > img{
       display: none;
   }
-  #login > a > img{
+  div#login > a > img{
       display: none;
 
   }

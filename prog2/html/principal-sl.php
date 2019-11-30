@@ -13,7 +13,7 @@
 
         elseif(isset($_GET['cat'])){
           $lista = $produto->filtroCategoria($_GET['cat']);
-          
+
         }
 
         else {
@@ -54,13 +54,6 @@
             ?>
 
                           <main class="grid-conteiner">
-                              <?php
-                              if(empty($lista)) {
-                                  var_dumo("asASAs");
-                              }
-
-                              ?>
-
                               <div class="produto">
                                   <a href="visualizacao-sl.php?id=<?=$lista[$n]['cod'];?>"><img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?>"></a>
 

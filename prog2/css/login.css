@@ -31,7 +31,7 @@ img{
   width:250px;
   height:125px;
 }
-#usuario,#senha{
+#login, #senha{
   margin: 2%;
   width: 60%;
   height: 15%;
@@ -39,7 +39,7 @@ img{
   font-family: Ubuntu;
   border-radius: 1px;
 }
-#usuario:hover,#senha:hover{
+#login:hover,#senha:hover{
   background-color: #e0bcdd;
 
 }

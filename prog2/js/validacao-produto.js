@@ -1,7 +1,7 @@
 form = document.querySelector("form");
-form.addEventListener("submit", validaDados);
+form.addEventListener("submit", validaProduto);
 
-function validaDados() {
+function validaProduto() {
     event.preventDefault();
 
     valid = true;

@@ -86,7 +86,7 @@
                            value="<?= $produto['cod']; ?>">
 
                     <label for="i-nome" id="l-nome">Nome</label>
-                    <input name="nome" id="i-nome" type="text" form="form"
+                    <input name="nome" id="i-nome" type="text" form="form" maxlength="30"
                            value="<?= $produto['nome']; ?>">
 
                     <label for="i-valor" id="l-valor">Valor</label>

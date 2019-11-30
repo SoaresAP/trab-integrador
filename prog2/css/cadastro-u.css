@@ -26,7 +26,7 @@ img{
   width:300px;
   height:150px;
 }
-#usuario,#senha,#email,#confirmasenha{
+#login, #senha,#email,#confirmasenha{
   margin-top: 20px;
   width: 60%;
   height: 15%;
@@ -34,7 +34,7 @@ img{
   font-family: Ubuntu;
   border-radius: 1px;
 }
-#usuario:hover,#senha:hover,#email:hover,#confirmasenha:hover{
+#login:hover,#senha:hover,#email:hover,#confirmasenha:hover{
   background-color: #e0bcdd;
 
 }

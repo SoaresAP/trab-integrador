@@ -29,3 +29,43 @@ main{
     color: gray;
 
 }
+.nome > h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: ubuntu;
+
+}
+.preco > h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: ubuntu;
+    color: green;
+
+}
+.imagem > img{
+    margin-top: 12%;
+}
+
+@media (max-width: 1000px) {
+
+  .nome > h1{
+      font-size: 20px;
+      font-weight: bold;
+      font-family: ubuntu;
+
+  }
+  .preco > h1{
+      font-size: 20px;
+      font-weight: bold;
+      font-family: ubuntu;
+      color: green;
+
+  }
+  .imagem > img{
+      margin-top: 6%;
+  }
+
+
+
+
+}

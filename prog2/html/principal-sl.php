@@ -1,7 +1,6 @@
 
 <?php
     require_once "../classes/Produto.php";
-    //require_once "includes/functions.php"; MOSTRA A IMAGEM DO PRODUTO
 
     $produto = new Produto();
 
@@ -63,7 +62,8 @@
                               ?>
 
                               <div class="produto">
-                                  <img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?>">
+                                  <a href="visualizacao-sl.php?id=<?=$lista[$n]['cod'];?>"><img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?>"></a>
+
                                   <p><?=$lista[$n]['nome'];?></p>
                                   <p><?=$produto->formataPreco($lista[$n]['valor']);?></p>
                               </div>

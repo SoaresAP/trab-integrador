@@ -54,6 +54,12 @@ class Produto {
         $res = $this->bd->select($sql);
         return $res;
     }
+    function filtroCodigo($codigo) {
+        $sql = "SELECT * FROM produto
+                WHERE cod = $codigo";
+        $res = $this->bd->select($sql);
+        return $res;
+    }
     function listarTodos() {
         $sql = "SELECT * FROM produto";
         $res = $this->bd->select($sql);

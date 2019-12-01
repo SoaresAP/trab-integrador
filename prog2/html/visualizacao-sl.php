@@ -31,7 +31,7 @@
 
             <main class="grid-conteiner">
                 <div class="imagem">
-                    <img src="../img/<?=$produto->mostraImagem($lista[0]['img']);?>">
+                    <img src="../img/<?=$produto->mostraImagem($lista[0]['img']);?>" width="200">
                 </div>
                 <div class="nome"><h1><?=$lista[0]['nome'];?></h1></div>
                 <div class="preco"><h1><?=$produto->formataPreco($lista[0]['valor']);?></h1></div>

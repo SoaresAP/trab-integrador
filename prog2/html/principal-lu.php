@@ -66,22 +66,9 @@
             ?>
         </div>
 
-        <script>
-
-            document.querySelector('#categorias > img').onclick = function(){
-                document.getElementsByClassName('barra')[0].style.display = 'grid';
-                document.getElementsByClassName('barra')[0].focus();
-
-            }
-
-            document.querySelector('.barra').onblur = function(){
-
-                document.getElementsByClassName('barra')[0].style.display = 'none';
-
-            }
-
-
-        </script>
+      
+        <script src="../js/submit-busca.js"></script>
+        <script src="../js/menu-lateral.js"></script>
 
     </body>
 

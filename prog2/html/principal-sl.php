@@ -55,7 +55,7 @@
 
                           <main class="grid-conteiner">
                               <div class="produto">
-                                  <a href="visualizacao-sl.php?id=<?=$lista[$n]['cod'];?>"><img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?>"></a>
+                                  <a href="visualizacao-sl.php?id=<?=$lista[$n]['cod'];?>"><img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?> " width="200" ></a>
 
                                   <p><?=$lista[$n]['nome'];?></p>
                                   <p><?=$produto->formataPreco($lista[$n]['valor']);?></p>

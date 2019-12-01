@@ -62,6 +62,7 @@ function validaUsuario() {
 
     if (valid) {
         form.submit();
+        
     } else {
         return false;
     }

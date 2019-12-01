@@ -9,7 +9,10 @@
 
         $res = $usuario->cadastrar($dados);
         if ($res) {
-            header("Location: principal-sl.php");
+            session_start();
+            $_SESSION['login'] = $_POST['login'];
+
+            header("Location: principal-lu.php");
         } else {
             header("Location: cadastro-u.php");
         }

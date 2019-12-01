@@ -1,3 +1,11 @@
+<?php
+  require_once "../classes/Produto.php";
+  $produto = new Produto();
+
+  $lista = $produto->filtroCodigo($_GET['id']);
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
@@ -22,10 +30,12 @@
             <?php include_once "../includes/head2.php"; ?>
 
             <main class="grid-conteiner">
-                <div class="imagem">IMAGEM</div>
-                <div class="nome">NOME</div>
-                <div class="preco">PRECO</div>
-                <div class="descricao">DESCRICAO</div>
+                <div class="imagem">
+                    <img src="../img/<?=$produto->mostraImagem($lista[0]['img']);?>">
+                </div>
+                <div class="nome"><h1><?=$lista[0]['nome'];?></h1></div>
+                <div class="preco"><h1><?=$produto->formataPreco($lista[0]['valor']);?></h1></div>
+                <div class="descricao"><p><?=$lista[0]['descr'];?></p></div>
             </main>
         </div>
         <script src="../js/menu-lateral.js">

@@ -35,6 +35,14 @@ div[name="cadastro"]{
     max-height: 15vh;
     margin-top: 5px;
 }
+h2[name="resultado"]{
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+}
 
 
 
@@ -61,6 +69,14 @@ div[name="cadastro"]{
     }
     #divBusca > img{
         margin-top: 7px;
+    }
+    h2[name="resultado"]{
+        padding-top: 40px;
+        padding-left: 15px;
+        text-align: left;
+        font-size: 30px;
+        font-style: italic;
+        color: gray;
     }
 
 

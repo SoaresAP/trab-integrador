@@ -8,16 +8,19 @@
       	if(isset($_GET['busca'])){
 
           $lista = $produto->filtroBusca($_GET['busca']);
-          $titulo ="Resultado da busca por \"{$_GET['busca']}\" ";
+          $titulo = $_GET['busca'];
+
         }
 
         elseif(isset($_GET['cat'])){
           $lista = $produto->filtroCategoria($_GET['cat']);
+          $titulo = $_GET['cat'];
 
         }
 
         else {
           $lista = $produto->listarTodos();
+          $titulo = "Todos";
 
         }
 
@@ -43,11 +46,23 @@
 
     <body>
 
+
+
         <div class="grid-conteiner" id="tela">
 
 
             <?php include_once "../includes/head1.php"; ?>
+
+            <?php if ($lista != "") {?>
+                <div class="resultado">
+                    <h2 name="resultado">Resultados por " <?= $titulo ?> "</h2>
+                </div>
+                <?php
+            }
+               ?>
+
             <?php
+
 
 
                         foreach($lista as $n => $v){

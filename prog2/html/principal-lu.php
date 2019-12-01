@@ -8,16 +8,18 @@
       	if(isset($_GET['busca'])){
 
           $lista = $produto->filtroBusca($_GET['busca']);
-          $titulo ="Resultado da busca por \"{$_GET['busca']}\" ";
+          $titulo = $_GET['busca'];
         }
 
         elseif(isset($_GET['cat'])){
           $lista = $produto->filtroCategoria($_GET['cat']);
+          $titulo = $_GET['cat'];
 
         }
 
         else {
           $lista = $produto->listarTodos();
+          $titulo = "Todos";
 
         }
 
@@ -46,6 +48,16 @@
             <!--HEAD-->
             <?php include_once "../includes/head2.php"; ?>
 
+            <?php
+            if ($titulo != "") {?>
+                <div class="resultado">
+                    <h2 name="resultado">Resultados por " <?= $titulo ?> "</h2>
+                </div>
+                <?php
+            }
+               ?>
+
+
 
             <?php
                         foreach($lista as $n => $v){
@@ -66,7 +78,7 @@
             ?>
         </div>
 
-      
+
         <script src="../js/submit-busca.js"></script>
         <script src="../js/menu-lateral.js"></script>
 

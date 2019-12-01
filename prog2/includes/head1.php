@@ -17,6 +17,9 @@
             <a href="principal-sl.php?cat=Higiene"><div class="link">HIGIENE</div></a>
             <a href="principal-sl.php?cat=Pele"><div class="link">PELE</div></a>
             <a href="principal-sl.php?cat=Perfume"><div class="link">PERFUME</div></a>
+            <a href="cadastro-u.php"><div class="link" name="cadastro">CADASTRAR</div></a>
+            <a href="login.php"><div class="link" name="login">LOGIN</div></a>
+
 
         </nav>
 
@@ -47,6 +50,7 @@
           <a href="principal-sl.php?cat=Higiene">HIGIENE</a> |
           <a href="principal-sl.php?cat=Pele">PELE</a> |
           <a href="principal-sl.php?cat=Perfume">PERFUME</a>
+
         </nav>
     </div>
 </header>

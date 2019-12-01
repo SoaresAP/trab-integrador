@@ -16,17 +16,19 @@
 
 #perfil {
     grid-area: perfil;
-    margin: 8px;
+    padding-top: 10px;
     border: 1px solid black;
-    height: 11vh;
+    height: 126px;
+
 
 }
 
 #sair {
     grid-area: sair;
-    margin: 8px;
+    padding-top: 20px;
     border: 1px solid black;
-    height: 11vh;
+    height: 126px;
+
 
 }
 

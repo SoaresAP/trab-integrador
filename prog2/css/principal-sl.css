@@ -3,6 +3,12 @@ header {
                          "categorias logo logo"
                          "pesquisa pesquisa pesquisa";
 }
+div[name="login"]{
+    background-color: blue;
+}
+div[name="cadastro"]{
+    background-color: blue;
+}
 #divBusca{
     background-color: white;
     border:solid 1px;

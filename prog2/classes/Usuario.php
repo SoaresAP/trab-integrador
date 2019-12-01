@@ -18,6 +18,11 @@ class Usuario {
         $res = $this->bd->query($sql);
         return $res;
     }
+    function autenticar($usuario) {
+        $sql = "SELECT * FROM usuario WHERE login = '$usuario'";
+        $res = $this->bd->select($sql);
+        return $res;
+    }
 
     function cadastrar($dados) {
         $sql = sprintf("INSERT INTO usuario

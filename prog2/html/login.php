@@ -17,12 +17,15 @@
             <div class="logo">
                 <img src="../img/vitari.jpg">
             </div>
+            <form action="../autenticacao.php" method="post" id="form-login">
+              <div class="entrada">
+                  <input type="text" name="login" id="login" placeholder="Login" autofocus><br>
+                  <input type="password" name="senha" id="senha" placeholder="Senha"><br>
+                  <input type="submit" id="botao" value="ENTRAR">
+              </div>
 
-            <div class="entrada">
-                <input type="text" name="login" id="login" placeholder="Login" autofocus><br>
-                <input type="password" name="senha" id="senha" placeholder="Senha"><br>
-                <button type="button" name="entrar">Entrar</button>
-            </div>
+            </form>
+
 
         </div>
       </div>

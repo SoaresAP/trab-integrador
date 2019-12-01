@@ -141,6 +141,7 @@ div#login > a > img{
         grid-area: cadastro;
         border: 1px solid black;
         max-height: 100vh;
+        height: 126px;
         padding-top: 30px;
 
 
@@ -150,6 +151,7 @@ div#login > a > img{
         grid-area: login;
         border: 1px solid black;
         max-height: 100vh;
+        height: 126px;
         padding-top: 30px;
     }
     .barra{

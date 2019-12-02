@@ -2,19 +2,25 @@
     include_once "../classes/Usuario.php";
     $usuario = new Usuario();
 
+    include_once "../classes/Admin.php";
+    $admin = new Admin();
+
     if (!empty($_POST)){
         $dados = array('login' => $_POST['login'],
                        'senha' => $_POST['senha'],
                        'email' => $_POST['email']);
 
-        $res = $usuario->cadastrar($dados);
-        if ($res) {
-            session_start();
-            $_SESSION['login'] = $_POST['login'];
+        $inAdm = $admin->find($_POST['login']);
+        if (!$inAdm) {
+            $res = $usuario->cadastrar($dados);
+            if ($res) {
+                session_start();
+                $_SESSION['login'] = $_POST['login'];
 
-            header("Location: principal-lu.php");
-        } else {
-            header("Location: cadastro-u.php");
+                header("Location: principal-lu.php");
+            } else {
+                header("Location: cadastro-u.php");
+            }
         }
     }
 ?>

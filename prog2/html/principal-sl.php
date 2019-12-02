@@ -4,21 +4,27 @@
 
     $produto = new Produto();
 
-    // controller
-      	if(isset($_GET['busca'])){
+  	if(isset($_GET['busca'])){
+      $lista = $produto->filtroBusca($_GET['busca']);
+      $titulo = $_GET['busca'];
+    } else if(isset($_GET['cat'])){
+      $lista = $produto->filtroCategoria($_GET['cat']);
+      $titulo = $_GET['cat'];
+    } else {
+      $lista = $produto->listarTodos();
+      $titulo = "Todos";
+    }
 
+      	if(isset($_GET['busca'])){
           $lista = $produto->filtroBusca($_GET['busca']);
-          $titulo ="Resultado da busca por \"{$_GET['busca']}\" ";
         }
 
         elseif(isset($_GET['cat'])){
           $lista = $produto->filtroCategoria($_GET['cat']);
-
         }
 
         else {
           $lista = $produto->listarTodos();
-
         }
 
 ?>
@@ -43,30 +49,39 @@
 
     <body>
 
+
+
         <div class="grid-conteiner" id="tela">
 
 
             <?php include_once "../includes/head1.php"; ?>
-            <?php
 
+            <?php if ($lista != "") {?>
+               <div class="resultado">
+                   <h2 name="resultado">Resultados por " <?= $titulo ?> "</h2>
+               </div>
+               <?php
+           }
+              ?>
 
-                        foreach($lista as $n => $v){
-            ?>
+            <main class="grid-conteiner">
+                <?php
+                    foreach ($lista as $p) {
+                        printf('<div class="produto">
+                                    <a href="visualizacao-sl.php?id=%s">
+                                        <img src="../img/%s" width="200">
+                                    </a>
 
-                          <main class="grid-conteiner">
-                              <div class="produto">
-                                  <a href="visualizacao-sl.php?id=<?=$lista[$n]['cod'];?>"><img src="../img/<?=$produto->mostraImagem($lista[$n]['img']);?> " width="200" ></a>
-
-                                  <p><?=$lista[$n]['nome'];?></p>
-                                  <p><?=$produto->formataPreco($lista[$n]['valor']);?></p>
-                              </div>
-
-                         </main>
-            <?php
-                      }
-
-            ?>
+                                    <p>%s</p>
+                                    <p>%s</p>
+                                </div>',
+                                $p['cod'], $p['img'],
+                                $p['nome'], $produto->formataPreco($p['valor']));
+                    }
+                ?>
+            </main>
         </div>
+
         <script src="../js/submit-busca.js"></script>
         <script src="../js/menu-lateral.js"></script>
     </body>

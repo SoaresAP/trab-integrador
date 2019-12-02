@@ -3,6 +3,12 @@ header {
                          "categorias logo logo"
                          "pesquisa pesquisa pesquisa";
 }
+div[name="login"]{
+    background-color: blue;
+}
+div[name="cadastro"]{
+    background-color: blue;
+}
 #divBusca{
     background-color: white;
     border:solid 1px;
@@ -28,6 +34,14 @@ header {
     max-width: 47vw;
     max-height: 15vh;
     margin-top: 5px;
+}
+h2[name="resultado"]{
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
 }
 
 
@@ -55,6 +69,14 @@ header {
     }
     #divBusca > img{
         margin-top: 7px;
+    }
+    h2[name="resultado"]{
+        padding-top: 40px;
+        padding-left: 15px;
+        text-align: left;
+        font-size: 30px;
+        font-style: italic;
+        color: gray;
     }
 
 

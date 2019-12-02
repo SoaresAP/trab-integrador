@@ -26,7 +26,7 @@
         <figcaption>Bem vindo(a) <?=$_SESSION['login']; ?></figcaption>
     </div>
     <div id="sair">
-        <a href="../prog2/sair.php"><img src="../img/sair.png"></a>
+        <a href="sair.php"><img src="../img/sair.png"></a>
     </div>
 
     <form action="principal-lu.php" method="get" id="form"></form>

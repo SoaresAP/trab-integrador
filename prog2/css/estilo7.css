@@ -46,7 +46,7 @@ main{
     margin-top: 12%;
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
 
   .nome > h1{
       font-size: 20px;
@@ -64,8 +64,4 @@ main{
   .imagem > img{
       margin-top: 6%;
   }
-
-
-
-
 }

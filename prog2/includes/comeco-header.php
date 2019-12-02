@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <header class="grid-conteiner">
     <div class="barra">
         <nav>

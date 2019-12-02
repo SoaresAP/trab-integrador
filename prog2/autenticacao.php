@@ -4,12 +4,12 @@ $usuario = new Usuario();
 $dados = $usuario->autenticar($_POST['login']);
 
 if(empty($dados)){ // usuario nao existe
-	header("Location: login.php?erro=1");
+	header("Location: ../prog2/html/login.php?erro=1");
 }
 else{ // usuario existe
 	$senha = $_POST['senha'];
 	if($senha != $dados[0]['senha']){
-		header("Location: login.php?erro=2");
+		header("Location: ../prog2/html/login.php?erro=2");
 	}
 	else{ // login e senha corretos
 		session_start(); // abre uma nova sessao

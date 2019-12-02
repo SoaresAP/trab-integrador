@@ -13,6 +13,7 @@
           <a href="principal-lu.php?cat=Higiene"><div class="link">HIGIENE</div></a>
           <a href="principal-lu.php?cat=Pele"><div class="link">PELE</div></a>
           <a href="principal-lu.php?cat=Perfume"><div class="link">PERFUME</div></a>
+          <a href="../sair.php"><div class="link" name="sair">SAIR</div></a>
         </nav>
 
     </div>

@@ -13,6 +13,9 @@ header {
     margin-top: 10px;
 
 }
+div[name="sair"]{
+    background-color: blue;
+}
 #divBusca > input{
     display: absolute;
     text-align: left;
@@ -39,11 +42,16 @@ header {
     height: 5px;
 
 }
-#sair > img{
-    width: 5px;
-    height: 5px;
-    border: 1px solid black;
+h2[name="resultado"]{
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
 }
+
+
 
 
 @media (min-width: 1000px) {
@@ -77,6 +85,13 @@ header {
         font-size: 30px;
         font-style: italic;
         color: gray;
+    }
+
+
+}
+@media (max-width: 1000px) {
+    #sair{
+        display: none;
     }
 
 

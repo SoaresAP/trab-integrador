@@ -18,6 +18,16 @@ class Admin {
         return $res;
     }
 
+    function find($login) {
+        $sql = sprintf("SELECT *
+                        FROM admin
+                        WHERE login = '%s'",
+                        $login);
+
+        $res = $this->bd->select($sql);
+        return $res;
+    }
+
     function login($login, $senha) {
         $sql = sprintf("SELECT *
                         FROM admin

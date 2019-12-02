@@ -22,6 +22,7 @@
                 header("Location: cadastro-u.php");
             }
         }
+
     }
 ?>
 

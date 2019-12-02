@@ -6,6 +6,7 @@
 
   	if(isset($_GET['busca'])){
       $lista = $produto->filtroBusca($_GET['busca']);
+<<<<<<< HEAD
       $titulo = $_GET['busca'];
     } else if(isset($_GET['cat'])){
       $lista = $produto->filtroCategoria($_GET['cat']);
@@ -13,6 +14,12 @@
     } else {
       $lista = $produto->listarTodos();
       $titulo = "Todos";
+=======
+    } else if(isset($_GET['cat'])){
+      $lista = $produto->filtroCategoria($_GET['cat']);
+    } else {
+      $lista = $produto->listarTodos();
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
     }
 
       	if(isset($_GET['busca'])){
@@ -56,6 +63,7 @@
 
             <?php include_once "../includes/head1.php"; ?>
 
+<<<<<<< HEAD
             <?php if ($lista != "") {?>
                <div class="resultado">
                    <h2 name="resultado">Resultados por " <?= $titulo ?> "</h2>
@@ -64,12 +72,18 @@
            }
               ?>
 
+=======
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
             <main class="grid-conteiner">
                 <?php
                     foreach ($lista as $p) {
                         printf('<div class="produto">
                                     <a href="visualizacao-sl.php?id=%s">
+<<<<<<< HEAD
                                         <img src="../img/%s" width="200">
+=======
+                                        <img src="../img/%s">
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
                                     </a>
 
                                     <p>%s</p>

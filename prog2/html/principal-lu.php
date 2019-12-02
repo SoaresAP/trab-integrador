@@ -3,6 +3,7 @@
     require_once "../classes/Produto.php";
     $produto = new Produto();
 
+<<<<<<< HEAD
     if(isset($_GET['busca'])){
       $lista = $produto->filtroBusca($_GET['busca']);
       $titulo = $_GET['busca'];
@@ -12,6 +13,14 @@
     } else {
       $lista = $produto->listarTodos();
       $titulo = "Todos";
+=======
+  	if (isset($_GET['busca'])) {
+      $lista = $produto->filtroBusca($_GET['busca']);
+    } else if (isset($_GET['cat'])) {
+        $lista = $produto->filtroCategoria($_GET['cat']);
+    } else {
+      $lista = $produto->listarTodos();
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
     }
 
 ?>
@@ -19,6 +28,7 @@
 
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
+
     <head>
         <title>Vitari - Cosméticos e Perfumaria</title>
 
@@ -27,10 +37,11 @@
 
         <link rel="stylesheet" href="../css/reset.css">
 
-        <link rel="stylesheet" href="../css/estilo1.css">
         <link rel="stylesheet" href="../css/estilo0.css">
+        <link rel="stylesheet" href="../css/estilo1.css">
         <link rel="stylesheet" href="../css/estilo7.css">
         <link rel="stylesheet" href="../css/principal-lu.css">
+
     </head>
 
     <body>
@@ -38,6 +49,7 @@
 
             <?php include_once "../includes/head2.php"; ?>
 
+<<<<<<< HEAD
             <?php
             if ($titulo != "") {?>
                 <div class="resultado">
@@ -47,12 +59,18 @@
             }
                ?>
 
+=======
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
             <main class="grid-conteiner">
                 <?php
                     foreach ($lista as $p) {
                         printf('<div class="produto">
                                     <a href="visualizacao-sl.php?id=%s">
+<<<<<<< HEAD
                                         <img src="../img/%s" width="200">
+=======
+                                        <img src="../img/%s">
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
                                     </a>
 
                                     <p>%s</p>

@@ -47,6 +47,7 @@ class Produto {
         $res = $this->bd->query($sql);
         return $res;
     }
+
     function filtroBusca($palavraChave) {
         $sql = "SELECT * FROM produto
                 WHERE nome LIKE '%{$palavraChave}%'
@@ -72,7 +73,10 @@ class Produto {
         $res = $this->bd->select($sql);
         return $res;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
     function formataPreco($valor){
 	     return "R$ ".str_replace(".", ",", number_format($valor, 2));
     }

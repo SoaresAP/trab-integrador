@@ -25,7 +25,7 @@
     </div>
 
     <div id="logo">
-        <a href="principal-sl.php">
+        <a href="#">
             <img src="../img/vitari.jpg" alt="logo">
         </a>
     </div>
@@ -35,5 +35,5 @@
         </a>
     </div>
     <div id="sair">
-        <a href="#">SAIR</a>
+        <a href="sair.php?login=<?= $_SESSION['login']; ?>">SAIR</a>
     </div>

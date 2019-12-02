@@ -10,6 +10,8 @@ class Usuario {
     }
 
     function find($login) {
+<<<<<<< HEAD
+=======
         $sql = sprintf("SELECT *
                         FROM usuario
                         WHERE login = '%s'",
@@ -20,10 +22,24 @@ class Usuario {
     }
 
     function login($login, $senha) {
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
+        $sql = sprintf("SELECT *
+                        FROM usuario
+                        WHERE login = '%s'",
+                        $login);
+
+<<<<<<< HEAD
+        $res = $this->bd->select($sql);
+        return $res;
+    }
+
+    function login($login, $senha) {
         $sql = sprintf("SELECT *
                         FROM usuario
                         WHERE login = '%s' and senha = '%s'",
                         $login, $senha);
+=======
+>>>>>>> c3ca90dfa4f907be4cc81e5e21a4918e6a92f98f
         $res = $this->bd->select($sql);
         return $res;
     }

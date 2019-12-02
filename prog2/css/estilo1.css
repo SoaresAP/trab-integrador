@@ -63,14 +63,18 @@ header {
 
 
 main {
-    grid-auto-rows: auto;
-    grid-gap: 3%;
+    /* grid-auto-flow: row; */
+    grid-column-gap: 3%;
     margin: 7px;
+<<<<<<< HEAD
+    margin-top: 30px;
+=======
 
 
 
+>>>>>>> 7bde04919b05de011d47d2b57d70458fbdc4eaaf
 }
-main > div{
+main > div {
     border: 1px solid black;
 
 
@@ -80,29 +84,27 @@ main > div{
     margin: 10px;
 }
 
-#cadastro > a > img{
+#cadastro > a > img {
     max-width: 100vw;
     height: 50px;
     margin: 3px;
 
 
 }
+
 div#login > a > img{
     max-width: 50px;
     height: 50px;
-
 }
+
 #perfil > a > img{
     width: 60px;
     height: 68px;
-
-
 }
+
 #sair > a > img{
     width: 60px;
     height: 68px;
-
-
 }
 
 /* -------------------------------- */
@@ -137,7 +139,8 @@ div#login > a > img{
 
     main {
         grid-template-columns: auto auto auto auto;
-        padding-top: 0px;
+        grid-auto-flow: row;
+        padding-top: 10px;
     }
 
     #cadastro {
@@ -166,13 +169,10 @@ div#login > a > img{
   #cadastro > a > img{
       display: none;
   }
+
   div#login > a > img{
       display: none;
 
-  }
-  *{
-      margin: 0;
-      padding: 0;
   }
 
   .barra{
@@ -183,9 +183,6 @@ div#login > a > img{
       transition: all .2s linear;
 
 
-  }
-  nav > a{
-      text-decoration: none;
   }
 
   nav{
@@ -209,7 +206,4 @@ div#login > a > img{
   .barra{
       display: none;
   }
-
-
-
 }

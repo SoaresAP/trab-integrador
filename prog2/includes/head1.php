@@ -5,7 +5,7 @@
         <img src="../img/menu.png" alt="opcoes">
     </div>
     <div id="logo">
-      <a href="principal-sl.php"><img src="../img/vitari.jpg"></a>
+        <a href="principal-sl.php"><img src="../img/vitari.jpg"></a>
 
     </div>
     <div class="barra" tabindex="0">

@@ -47,6 +47,7 @@ class Produto {
         $res = $this->bd->query($sql);
         return $res;
     }
+
     function filtroBusca($palavraChave) {
         $sql = "SELECT * FROM produto
                 WHERE nome LIKE '%{$palavraChave}%'
@@ -71,12 +72,6 @@ class Produto {
         $sql = "SELECT * FROM produto";
         $res = $this->bd->select($sql);
         return $res;
-    }
-    function mostraImagem($nomeArquivo){
-      if($nomeArquivo =='')
-          return "default.png";
-	    else
-		      return $nomeArquivo;
     }
     function formataPreco($valor){
 	     return "R$ ".str_replace(".", ",", number_format($valor, 2));

@@ -9,17 +9,22 @@ class Usuario {
         $this->bd = new BD();
     }
 
+    function find($login) {
+        $sql = sprintf("SELECT *
+                        FROM usuario
+                        WHERE login = '%s'",
+                        $login);
+
+        $res = $this->bd->select($sql);
+        return $res;
+    }
+
     function login($login, $senha) {
         $sql = sprintf("SELECT *
                         FROM usuario
                         WHERE login = '%s' and senha = '%s'",
                         $login, $senha);
 
-        $res = $this->bd->query($sql);
-        return $res;
-    }
-    function autenticar($usuario) {
-        $sql = "SELECT * FROM usuario WHERE login = '$usuario'";
         $res = $this->bd->select($sql);
         return $res;
     }

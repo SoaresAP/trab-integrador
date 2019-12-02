@@ -1,3 +1,44 @@
+<?php
+
+include_once "../classes/Usuario.php";
+$usuario = new Usuario();
+
+include_once "../classes/Admin.php";
+$admin = new Admin();
+
+if (!empty($_POST)) {
+    $u = $usuario->find($_POST['login']);
+    $a = $admin->find($_POST['login']);
+
+    if (empty($a) && empty($u)) {
+        header("Location: ../html/login.php?erro=1");
+    } else if (!empty($u)) {
+        $l = $usuario->login($_POST['login'], $_POST['senha']);
+
+        if ($l) {
+            session_start();
+            $_SESSION['login'] = $_POST['login'];
+
+            header("Location: ../html/principal-lu.php");
+        } else {
+            header("Location: ../html/login.php?erro=2");
+        }
+    } else if (!empty($a)) {
+        $l = $admin->login($_POST['login'], $_POST['senha']);
+
+        if ($l) {
+            session_start();
+            $_SESSION['login'] = $_POST['login'];
+
+            header("Location: ../html/principal-la.php");
+        } else {
+            header("Location: ../html/login.php?erro=2");
+        }
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
     <head>
@@ -17,7 +58,7 @@
             <div class="logo">
                 <img src="../img/vitari.jpg">
             </div>
-            <form action="../autenticacao.php" method="post" id="form-login">
+            <form action="" method="post" id="form-login">
               <div class="entrada">
                   <input type="text" name="login" id="login" placeholder="Login" autofocus><br>
                   <input type="password" name="senha" id="senha" placeholder="Senha"><br>
@@ -25,8 +66,6 @@
               </div>
 
             </form>
-
-
         </div>
       </div>
     </body>

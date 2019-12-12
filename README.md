@@ -1,18 +1,17 @@
-# PLANEJAMENTO
+# :convenience_store: Loja virtual Vitari
 
-## Requisitos funcionais a se desenvolver:
+## :clipboard: Ficha
 
-1. Cadastro usuário (RF01)
+- __Autores__: [Leonardo Soares](https://github.com/SoaresAP) e [Paulo Comasetto](https://github.com/PauloGSC)
+- __Ano__: 2019
+- __Empresa__: Vitari - Cosméticos e Perfumaria
 
-2. Efetuar login (RF02)
+## :computer: Tecnologias
 
-3. Sair do sistema (RF03)
+- __Front-end__: HTML, CSS, JS
+- __Back-end__: PHP
+- __BD__: MySQL
 
-4. Visualizar tela principal (RF04)
-
-5. Cadastrar produto (RF09)
-
-6. Pesquisar produtos (RF18)
-
-7. Visualizar produto específico (RF19)
-
+## :memo: Descrição
+- Loja virtual criada pelos autores para a loja de cosméticos e perfumaria Vitari
+- A loja não é funcional, foi apenas criada para fins acadêmicos
